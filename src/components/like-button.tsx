@@ -55,7 +55,13 @@ export default function LikeButton() {
       <Win98Button
         onClick={handleLike}
         disabled={isLoading}
-        className={cn("w-32 relative", hasLiked && "[text-shadow:0_0_#000]")}
+        className={cn(
+          "w-32 relative",
+          hasLiked && [
+            "[text-shadow:0_0_#000]",
+            "outline-dotted outline-1 outline-black -outline-offset-4",
+          ]
+        )}
       >
         <div className="flex items-center justify-center gap-2">
           <ThumbsUp
