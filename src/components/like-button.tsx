@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
 import { ThumbsUp } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { RetroButton } from "@/components/ui/retro-button";
 
 export default function LikeButton() {
   const [likes, setLikes] = useState(0);
@@ -51,29 +51,26 @@ export default function LikeButton() {
   }, []);
 
   return (
-    <div className="flex items-center gap-2 not-prose">
-      <Button
+    <div className="flex items-center gap-4 not-prose">
+      <RetroButton
         onClick={handleLike}
         disabled={isLoading}
-        variant="outline"
-        className="py-0 pe-0 gap-0 px-3 h-8"
+        variant={hasLiked ? "default" : "gray"}
+        className="w-32"
       >
-        <ThumbsUp
-          className={cn("me-2 opacity-60", isLoading && "animate-pulse")}
-          size={16}
-          strokeWidth={2}
-          aria-hidden="true"
-        />
-        Like
-        <span className="relative ms-3 inline-flex h-8 items-center justify-center rounded-e-md ps-3 text-xs font-medium text-muted-foreground before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-input">
-          {likes}
-        </span>
-      </Button>
+        <div className="flex items-center justify-center gap-2">
+          <ThumbsUp
+            className={cn("opacity-60", isLoading && "animate-pulse")}
+            size={16}
+            strokeWidth={2}
+            aria-hidden="true"
+          />
+          <span>{likes}</span>
+        </div>
+      </RetroButton>
 
       {hasLiked && (
-        <span className="text-sm text-muted-foreground">
-          Thanks for your support!
-        </span>
+        <span className="text-sm text-muted-foreground font-mono">Thanks!</span>
       )}
     </div>
   );
