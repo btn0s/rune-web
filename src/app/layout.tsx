@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rune",
+  title: "Rune — Visual Component Design for React",
   description:
-    "A visual development environment that brings the expressive power of Unreal Engine Blueprints to React component design.",
+    "Design React components visually with the power of code. Turn your Figma designs into production-ready components using an intuitive visual behavior system.",
   openGraph: {
-    title: "Rune",
+    title: "Rune — Visual Component Design for React",
     description:
-      "A visual development environment that brings the expressive power of Unreal Engine Blueprints to React component design.",
+      "Design React components visually with the power of code. Turn your Figma designs into production-ready components using an intuitive visual behavior system.",
     url: "https://rune.dev",
     siteName: "Rune",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Rune - Visual Behavior Design for React Components",
+        alt: "Rune - Visual Component Design for React",
       },
     ],
     locale: "en_US",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rune",
+    title: "Rune — Visual Component Design for React",
     description:
-      "A visual development environment that brings the expressive power of Unreal Engine Blueprints to React component design.",
+      "Design React components visually with the power of code. Turn your Figma designs into production-ready components using an intuitive visual behavior system.",
     images: ["/og.png"],
     creator: "@btn0s",
   },
