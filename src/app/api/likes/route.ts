@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 
-const LIKES_FILE = path.join(process.cwd(), "data", "likes.json");
+const LIKES_FILE = path.join(process.cwd(), "public", "data", "likes.json");
 
 // Initialize likes file if it doesn't exist
 async function initializeLikesFile() {
