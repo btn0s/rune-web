@@ -3,8 +3,17 @@ import fs from "fs/promises";
 import path from "path";
 import { PiAsteriskBold } from "react-icons/pi";
 import LikeButton from "@/components/like-button";
+import Image from "next/image";
+import imgSrc from "@/assets/images/rune-preview.jpg";
 
 const components = {
+  CoverImage: () => (
+    <Image
+      src={imgSrc}
+      alt="Rune Preview"
+      className="bg-muted-foreground rounded-lg"
+    />
+  ),
   LikeButton: LikeButton,
 };
 
