@@ -1,26 +1,24 @@
 import { NextResponse } from "next/server";
-import fs from "fs/promises";
-import path from "path";
+import { put, list, del } from "@vercel/blob";
 
-const LIKES_FILE = path.join(process.cwd(), "public", "data", "likes.json");
-
-// Initialize likes file if it doesn't exist
-async function initializeLikesFile() {
-  try {
-    await fs.access(LIKES_FILE);
-  } catch {
-    await fs.mkdir(path.dirname(LIKES_FILE), { recursive: true });
-    await fs.writeFile(LIKES_FILE, JSON.stringify({ count: 0 }));
-  }
-}
+const BLOB_KEY = "likes-count";
 
 // Get current likes count
 export async function GET() {
-  await initializeLikesFile();
-
   try {
-    const data = await fs.readFile(LIKES_FILE, "utf8");
-    return NextResponse.json(JSON.parse(data));
+    const { blobs } = await list({ prefix: BLOB_KEY });
+    const blob = blobs[0];
+    if (!blob) {
+      // Initialize with 0 if no data exists
+      await put(BLOB_KEY, JSON.stringify({ count: 0 }), {
+        contentType: "application/json",
+        access: "public",
+      });
+      return NextResponse.json({ count: 0 });
+    }
+    const response = await fetch(blob.url);
+    const text = await response.text();
+    return NextResponse.json(JSON.parse(text));
   } catch (error) {
     console.error("Error reading likes:", error);
     return NextResponse.json({ count: 0 });
@@ -29,14 +27,24 @@ export async function GET() {
 
 // Toggle likes count
 export async function POST() {
-  await initializeLikesFile();
-
   try {
-    const data = await fs.readFile(LIKES_FILE, "utf8");
-    const { count } = JSON.parse(data);
-    const newCount = count - 1 >= 0 ? count - 1 : count + 1;
+    const { blobs } = await list({ prefix: BLOB_KEY });
+    const blob = blobs[0];
+    let count = 0;
 
-    await fs.writeFile(LIKES_FILE, JSON.stringify({ count: newCount }));
+    if (blob) {
+      const response = await fetch(blob.url);
+      const text = await response.text();
+      const data = JSON.parse(text);
+      count = data.count;
+    }
+
+    const newCount = count - 1 >= 0 ? count - 1 : count + 1;
+    await put(BLOB_KEY, JSON.stringify({ count: newCount }), {
+      contentType: "application/json",
+      access: "public",
+    });
+
     return NextResponse.json({ count: newCount });
   } catch (error) {
     console.error("Error updating likes:", error);
