@@ -22,6 +22,7 @@ export async function GET() {
     const data = await fs.readFile(LIKES_FILE, "utf8");
     return NextResponse.json(JSON.parse(data));
   } catch (error) {
+    console.error("Error reading likes:", error);
     return NextResponse.json({ count: 0 });
   }
 }
@@ -38,6 +39,7 @@ export async function POST() {
     await fs.writeFile(LIKES_FILE, JSON.stringify({ count: newCount }));
     return NextResponse.json({ count: newCount });
   } catch (error) {
+    console.error("Error updating likes:", error);
     return NextResponse.json(
       { error: "Failed to update likes" },
       { status: 500 }
