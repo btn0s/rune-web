@@ -5,7 +5,7 @@ import { PiAsteriskBold } from "react-icons/pi";
 
 export default async function Home() {
   // Read the PRD file
-  const prdPath = path.join(process.cwd(), "docs", "PRD-ALPHA.md");
+  const prdPath = path.join(process.cwd(), "docs", "LANDING.md");
   const source = await fs.readFile(prdPath, "utf-8");
 
   return (

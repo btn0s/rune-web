@@ -1,0 +1,40 @@
+# Rune: Visual Behavior Design for React
+
+Design rich, interactive React components with the power of visual behavior design. Rune brings the expressive power of Unreal Engine Blueprints to React component development, bridging the gap between design and implementation.
+
+![Rune Alpha Preview](/rune-preview.jpg)
+
+## Design. Express. Ship.
+
+Transform your Figma designs into production-ready React components with sophisticated interactions - all through an intuitive visual interface. No translation loss, no back-and-forth. Just pure creative flow.
+
+## Key Features
+
+### 🎨 Seamless Figma Integration
+Import your Figma designs directly and transform them into React components with AI-powered automation. Maintain a live connection to your design source while you add rich interactions.
+
+### 🔄 Visual Behavior System
+Express complex component logic through an intuitive graph interface. Design state management, event handling, and data flows visually - with the full power of code at your fingertips.
+
+### ⚡️ Interactive Development
+See your components come to life in real-time. Test interactions, trace flows, and perfect your behavior design with immediate feedback.
+
+### 🚀 Production-Ready Output
+Generate clean, optimized TypeScript code that's ready for your React projects. No compromises on code quality or performance.
+
+## Built for Modern Teams
+
+- **Design Engineers**: Express complex behavior visually while maintaining full control
+- **Product Designers**: Design and validate interaction patterns directly
+- **Frontend Engineers**: Integrate production-ready components seamlessly
+
+## Stay Updated
+
+Rune is currently being developed by [@btn0s](https://btn0s.dev). Follow him for project updates and announcements:
+
+- [Twitter](https://twitter.com/btn0s)
+- [LinkedIn](https://www.linkedin.com/in/brendantnorris/)
+
+---
+
+*Rune – Visual thinking. Real code.* 
