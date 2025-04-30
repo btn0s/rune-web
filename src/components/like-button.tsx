@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { ThumbsUp } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { RetroButton } from "@/components/ui/retro-button";
+import { Win98Button } from "@/components/ui/win98-button";
 
 export default function LikeButton() {
   const [likes, setLikes] = useState(0);
@@ -52,26 +52,27 @@ export default function LikeButton() {
 
   return (
     <div className="flex items-center gap-4 not-prose">
-      <RetroButton
+      <Win98Button
         onClick={handleLike}
         disabled={isLoading}
-        variant={hasLiked ? "default" : "gray"}
-        className="w-32"
+        className={cn("w-32 relative", hasLiked && "[text-shadow:0_0_#000]")}
       >
         <div className="flex items-center justify-center gap-2">
           <ThumbsUp
-            className={cn("opacity-60", isLoading && "animate-pulse")}
-            size={16}
-            strokeWidth={2}
+            className={cn(
+              "text-muted-foreground",
+              hasLiked && "text-blue-700",
+              isLoading && "animate-pulse"
+            )}
+            size={14}
+            strokeWidth={2.5}
             aria-hidden="true"
           />
-          <span>{likes}</span>
+          <span className={cn(hasLiked && "text-blue-700")}>{likes}</span>
         </div>
-      </RetroButton>
+      </Win98Button>
 
-      {hasLiked && (
-        <span className="text-sm text-muted-foreground font-mono">Thanks!</span>
-      )}
+      {hasLiked && <span className="text-sm text-[#222]">Thanks!</span>}
     </div>
   );
 }
