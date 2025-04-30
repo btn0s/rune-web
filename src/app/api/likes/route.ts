@@ -13,6 +13,7 @@ export async function GET() {
       await put(BLOB_KEY, JSON.stringify({ count: 0 }), {
         contentType: "application/json",
         access: "public",
+        allowOverwrite: true,
       });
       return NextResponse.json({ count: 0 });
     }
@@ -43,6 +44,7 @@ export async function POST() {
     await put(BLOB_KEY, JSON.stringify({ count: newCount }), {
       contentType: "application/json",
       access: "public",
+      allowOverwrite: true,
     });
 
     return NextResponse.json({ count: newCount });
