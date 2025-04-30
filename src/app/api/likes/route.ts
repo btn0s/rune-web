@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { put, list, del } from "@vercel/blob";
+import { put, list } from "@vercel/blob";
 
 const BLOB_KEY = "likes-count";
 
