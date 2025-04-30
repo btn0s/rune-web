@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Rune — Visual Component Design for React",
   description:
-    "Design React components visually with the power of code. Turn your Figma designs into production-ready components using an intuitive visual behavior system.",
+    "Design rich, interactive React components visually with the power of code. Copy+paste into production.",
   openGraph: {
     title: "Rune — Visual Component Design for React",
     description:
-      "Design React components visually with the power of code. Turn your Figma designs into production-ready components using an intuitive visual behavior system.",
+      "Design rich, interactive React components visually with the power of code. Copy+paste into production.",
     url: "https://rune.dev",
     siteName: "Rune",
     images: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rune — Visual Component Design for React",
     description:
-      "Design React components visually with the power of code. Turn your Figma designs into production-ready components using an intuitive visual behavior system.",
+      "Design rich, interactive React components visually with the power of code. Copy+paste into production.",
     images: ["/og.png"],
     creator: "@btn0s",
   },
