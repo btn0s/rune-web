@@ -3,7 +3,7 @@
 ## Overview
 Rune Alpha is a visual development environment that brings the expressive power of Unreal Engine Blueprints to React component design. It's built for designers and design engineers who want to create rich, interactive components by expressing behavior visually - no translation, no loss of intent. By combining Figma's design capabilities with a powerful visual behavior system, you can create sophisticated React components with the full expressive power of code - all through an intuitive graph interface. See your ideas come to life as you design complex interactions, state management, and data flows visually, then export production-ready TypeScript that's ready to use in any React project.
 
-![Rune Alpha Preview](/public/rune-preview.jpg)
+![Rune Alpha Preview](/rune-preview.jpg)
 
 ## Core Features
 
