@@ -125,16 +125,16 @@
 
 .prose {
   h1 {
-    @apply text-2xl font-bold;
-  }
-  h2 {
     @apply text-xl font-bold;
   }
-  h3 {
+  h2 {
     @apply text-lg font-bold;
   }
-  h4 {
+  h3 {
     @apply text-base font-bold;
+  }
+  h4 {
+    @apply text-sm font-bold;
   }
   p {
     @apply text-sm leading-normal mb-0;
