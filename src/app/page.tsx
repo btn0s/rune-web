@@ -9,7 +9,7 @@ export default async function Home() {
   const source = await fs.readFile(prdPath, "utf-8");
 
   return (
-    <div className="container mx-auto px-4 max-w-prose flex flex-col gap-12 items-start py-24">
+    <div className="container mx-auto px-4 max-w-prose flex flex-col gap-12 items-start py-12 sm:py-32">
       <div className=" bg-white rounded-full py-1 px-4 flex items-center gap-1 border shadow font-bold">
         <PiAsteriskBold /> Rune
       </div>
