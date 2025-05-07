@@ -5,7 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { PiAsteriskBold } from "react-icons/pi";
 import MotionLoader from "@/components/motion-loader";
 
-import imgSrc from "@/assets/images/rune-preview.jpg";
+import imgSrc from "@/assets/images/rune.png";
 
 const components = {
   CoverImage: () => (
