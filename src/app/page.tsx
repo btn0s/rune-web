@@ -34,100 +34,97 @@ export default function Home() {
       </div>
 
       <p>
-        AI is fundamentally transforming how we build software. It's erasing the
-        traditional boundaries between designers, engineers, and product
-        managers, creating a landscape where roles blur and innovation
-        accelerates through seamless collaboration.
+        AI is reshaping how we build software. The old boundaries between
+        designers, engineers, and product managers are dissolving, giving rise
+        to a new era where roles blend and innovation accelerates through true
+        collaboration.
       </p>
 
       <p>
-        For too long, product creation has been fragmented—designers crafting
-        visuals, engineers writing code, product managers mediating between
-        them. This siloed approach created a cycle of handoffs and translations
-        that slowed innovation and limited creative potential.
+        For too long, product creation has been fragmented—designers focused on
+        visuals, engineers on code, and product managers on translation. This
+        siloed process slowed progress and stifled creativity.
       </p>
 
       <p>
-        Now teams can speak a unified language of creation. AI bridges the gap
-        between design and implementation, allowing collaboration through intent
-        rather than technical specifications. The teams of tomorrow will thrive
-        on this shared creative language, turning ideas into reality without the
-        friction of specialized translation layers.
+        Now, teams can create together in a shared language. AI bridges the gap
+        between design and implementation, enabling collaboration through
+        intent, not just technical specs. The teams of tomorrow will thrive on
+        this creative unity, turning ideas into reality without friction.
       </p>
 
       <p>
-        Rune is purpose-built for this collaborative future—a unified canvas
-        where design, engineering, and product teams speak the same creative
-        language. Without handoffs or translations, it enables continuous
-        creation where every change is instantly realized and ready to evolve.
-        It's a singular tool that empowers teams through its expressive,
-        intent-driven, and AI-native capabilities.
+        Rune unifies design, engineering, and product into a single canvas. No
+        more handoffs or translation layers—just continuous creation, where
+        every change is instantly realized as real, working software, ready to
+        evolve. With Rune, teams create, iterate, and ship as one—bridging
+        expressive intent and production-ready results, all with the help of AI.
       </p>
 
       <h2>Our Vision</h2>
 
       <p>
-        By combining the precision and design-first mindset of Figma, the
-        interactive, node-based logic of Unreal Engine Blueprints, and the
-        AI-powered code generation of Cursor, we're creating a seamless
-        environment for the full journey from idea to implementation.
+        By blending the precision of Figma, the interactive logic of Unreal
+        Engine Blueprints, and the AI-powered code generation of Cursor, Rune
+        creates a seamless journey from idea to implementation.
       </p>
 
       <ul>
         <li>
-          <strong>Design:</strong> Express your ideas on a fluid, infinite
-          canvas with familiar design tools you already know and love. Create
-          visually compelling experiences with precision and creative freedom.
+          <strong>Design:</strong> Express ideas on a fluid, infinite canvas
+          with familiar tools. Create visually compelling experiences with
+          precision and freedom.
         </li>
         <li>
-          <strong>Build:</strong> Add logic and interactivity to designs
-          directly. Remove the barrier between visual design and functional
-          implementation.
+          <strong>Build:</strong> Add logic and interactivity directly to
+          designs. Remove the barrier between visual design and functional
+          implementation—so every change builds real, working software, not just
+          a mockup.
         </li>
         <li>
-          <strong>Ship:</strong> Convert designs to production-ready code
-          quickly. Bridge the gap between prototypes and finished products with
-          AI that understands your goals.
+          <strong>Ship:</strong> Convert designs to production-ready code in
+          moments. Bridge the gap between prototypes and real, production-grade
+          software with AI that understands your goals.
         </li>
       </ul>
 
       <p>
-        Together, these capabilities create a true source of truth for modern
-        software, eliminating handoffs and bridging the gap between design and
-        production code.
+        Together, these capabilities make it possible to move from concept to
+        production in one continuous flow—where every change results in real,
+        interactive software, not just a prototype or mockup.
       </p>
 
       <h2>Why Now?</h2>
 
-      <p>
-        Three fundamental shifts in software creation make this the perfect
-        moment for Rune:
-      </p>
-
+      <p>The way software is built is changing fast:</p>
       <ul>
         <li>
-          <strong>The Rise of Full-Stack Creators:</strong> Today's most
-          effective builders work across the entire product stack. They need
-          tools that match this versatility—letting them move seamlessly between
-          design, logic, and implementation without context switching.
+          <strong>Design and code are converging:</strong> Bleeding edge teams
+          are already working in unified, AI-powered environments—moving
+          seamlessly from idea to implementation. This way of working will soon
+          become the norm.
         </li>
         <li>
-          <strong>AI as a Creative Multiplier:</strong> AI has evolved from
-          automating repetitive tasks to understanding and amplifying creative
-          intent. This enables tools that can translate high-level ideas
-          directly into functioning software.
+          <strong>AI is a true creative partner—when guided well:</strong> AI is
+          now extremely powerful, but current tools rely on text input and chat
+          interfaces, which are limiting and inefficient for modeling complex
+          software.
         </li>
         <li>
-          <strong>Real-Time Collaboration:</strong> Modern teams demand
-          immediate feedback loops. The future of software creation is
-          environments where ideas become reality in real-time, with everyone
-          creating in the same space simultaneously.
+          <strong>Disciplines are converging:</strong> The lines between design,
+          engineering, and product are dissolving—teams are becoming
+          increasingly generalist, yet current tools don't cater to these new
+          builders.
         </li>
       </ul>
+      <p>
+        Rune is built for this new era—where boundaries disappear, AI is a true
+        partner, and teams create as one.
+      </p>
 
       <hr />
 
-      <p className="font-semibold">Rune - A new way to build software.</p>
+      <p className="font-semibold">Rune – Unifying creation for the AI era.</p>
     </motion.div>
   );
 }
