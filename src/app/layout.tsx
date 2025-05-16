@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rune — Visual Component Design for React",
+  title: "Rune — A New Way to Build Software",
   description:
-    "Design rich, interactive React components visually with the power of code. Copy+paste into production.",
+    "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
   openGraph: {
-    title: "Rune — Visual Component Design for React",
+    title: "Rune — A New Way to Build Software",
     description:
-      "Design rich, interactive React components visually with the power of code. Copy+paste into production.",
+      "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
     url: "https://rune.dev",
     siteName: "Rune",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Rune - Visual Component Design for React",
+        alt: "Rune - A New Way to Build Software",
       },
     ],
     locale: "en_US",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rune — Visual Component Design for React",
+    title: "Rune — A New Way to Build Software",
     description:
-      "Design rich, interactive React components visually with the power of code. Copy+paste into production.",
+      "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
     images: ["/og.png"],
     creator: "@btn0s",
   },
