@@ -56,46 +56,38 @@ export default function Home() {
       </p>
 
       <p>
-        Rune is purpose-built for this collaborative future—a singular tool
-        that's expressive, intent-driven, and AI-native. We're designing for the
-        continuous flow from imagination to reality, without the traditional
-        barriers between thinking and making.
+        Rune is purpose-built for this collaborative future—a unified canvas
+        where design, engineering, and product teams speak the same creative
+        language. Without handoffs or translations, it enables continuous
+        creation where every change is instantly realized and ready to evolve.
+        It's a singular tool that empowers teams through its expressive,
+        intent-driven, and AI-native capabilities.
       </p>
 
       <h2>Our Vision</h2>
 
       <p>
-        A single canvas where design, engineering, and product collaborate in
-        the same language—no handoffs or translations, just continuous creation
-        where every change is instantly real and ready to evolve.
-      </p>
-
-      <h2>The Product</h2>
-
-      <p>
-        Rune combines the precision and design-first mindset of Figma, the
-        interactive, node-based logic of Unreal Blueprints, and the AI-powered
-        code generation of Cursor into a single, unified workspace.
+        By combining the precision and design-first mindset of Figma, the
+        interactive, node-based logic of Unreal Engine Blueprints, and the
+        AI-powered code generation of Cursor, we're creating a seamless
+        environment for the full journey from idea to implementation.
       </p>
 
       <ul>
         <li>
-          <strong>Design:</strong> Master visual composition with intuitive
-          vector and frame tooling, build with comprehensive component
-          libraries, and ensure adaptability with responsive constraints.
-          Optimized for design speed and clarity.
+          <strong>Design:</strong> Express your ideas on a fluid, infinite
+          canvas with familiar design tools you already know and love. Create
+          visually compelling experiences with precision and creative freedom.
         </li>
         <li>
-          <strong>Build:</strong> Bring your designs to life with first-class
-          logic, data, and state. Model interactions visually, similar to Unreal
-          Blueprints, with deep integration for real-time iteration and
-          feedback.
+          <strong>Build:</strong> Add logic and interactivity to designs
+          directly. Remove the barrier between visual design and functional
+          implementation.
         </li>
         <li>
-          <strong>Ship:</strong> Seamlessly transition from intent to
-          implementation with LLM-powered code generation. Transform your
-          high-level designs and prototypes into production-ready software,
-          effortlessly.
+          <strong>Ship:</strong> Convert designs to production-ready code
+          quickly. Bridge the gap between prototypes and finished products with
+          AI that understands your goals.
         </li>
       </ul>
 
@@ -108,27 +100,28 @@ export default function Home() {
       <h2>Why Now?</h2>
 
       <p>
-        Three shifts in how we build software make this the perfect moment for
-        Rune:
+        Three fundamental shifts in software creation make this the perfect
+        moment for Rune:
       </p>
 
       <ul>
         <li>
-          <strong>The Rise of the Full-Stack Builder:</strong> Teams are
-          increasingly built around individuals who can own the entire product
-          journey—from pixels to production. These builders need tools that
-          match their capabilities.
+          <strong>The Rise of Full-Stack Creators:</strong> Today's most
+          effective builders work across the entire product stack. They need
+          tools that match this versatility—letting them move seamlessly between
+          design, logic, and implementation without context switching.
         </li>
         <li>
-          <strong>AI as a Creative Partner:</strong> AI isn't just automating
-          tasks—it's becoming a collaborative tool that amplifies human intent
-          and creativity, enabling new ways of expressing ideas.
+          <strong>AI as a Creative Multiplier:</strong> AI has evolved from
+          automating repetitive tasks to understanding and amplifying creative
+          intent. This enables tools that can translate high-level ideas
+          directly into functioning software.
         </li>
         <li>
-          <strong>The End of Handoffs:</strong> Modern teams can't afford the
-          friction of traditional workflows. They need environments where
-          creation and implementation happen in the same space, at the same
-          time.
+          <strong>Real-Time Collaboration:</strong> Modern teams demand
+          immediate feedback loops. The future of software creation is
+          environments where ideas become reality in real-time, with everyone
+          creating in the same space simultaneously.
         </li>
       </ul>
 
