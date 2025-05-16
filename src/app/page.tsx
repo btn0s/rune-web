@@ -4,17 +4,15 @@ import { motion } from "motion/react";
 import { PiAsteriskBold } from "react-icons/pi";
 
 const DEFAULT_TRANSITION = {
-  duration: 0.7,
+  duration: 0.5,
   ease: "easeInOut",
 };
 const DEFAULT_HIDDEN_CONFIG = {
   opacity: 0,
-  y: 20,
   filter: "blur(10px)",
 };
 const DEFAULT_VISIBLE_CONFIG = {
   opacity: 1,
-  y: 0,
   filter: "blur(0px)",
 };
 const DEFAULT_VARIANTS = {
@@ -29,46 +27,43 @@ export default function Home() {
       initial="hidden"
       animate="visible"
       variants={DEFAULT_VARIANTS}
-      transition={{ ...DEFAULT_TRANSITION, staggerChildren: 0.05 }}
+      transition={DEFAULT_TRANSITION}
     >
-      <motion.div
-        variants={DEFAULT_VARIANTS}
-        className="flex items-center gap-1 font-bold"
-      >
+      <div className="flex items-center gap-1 font-bold">
         <PiAsteriskBold /> Rune
-      </motion.div>
+      </div>
 
-      <motion.p variants={DEFAULT_VARIANTS}>
+      <p>
         AI is enabling a new kind of builder—someone who can command both the
         visual language of design and the logical flow of engineering with the
         power of intent. As these tools evolve, we're seeing teams transform,
         increasingly built around builders who move seamlessly from ideas to
         execution without the inefficiencies of expensive handoffs.
-      </motion.p>
+      </p>
 
-      <motion.p variants={DEFAULT_VARIANTS}>
+      <p>
         This future needs tools built for these builders—expressive and
         intent-driven, AI-native, and designed for the continuous flow from
         imagination to reality.
-      </motion.p>
+      </p>
 
-      <motion.h2 variants={DEFAULT_VARIANTS}>Our Vision</motion.h2>
+      <h2>Our Vision</h2>
 
-      <motion.p variants={DEFAULT_VARIANTS}>
+      <p>
         A single canvas where design, engineering, and product collaborate in
         the same language—no handoffs or translations, just continuous creation
         where every change is instantly real and ready to evolve.
-      </motion.p>
+      </p>
 
-      <motion.h2 variants={DEFAULT_VARIANTS}>Introducing Rune</motion.h2>
+      <h2>Introducing Rune</h2>
 
-      <motion.p variants={DEFAULT_VARIANTS}>
+      <p>
         Rune combines the precision and design-first mindset of Figma, the
         interactive, node-based logic of Unreal Blueprints, and the AI-powered
         code generation of Cursor into a single, unified workspace.
-      </motion.p>
+      </p>
 
-      <motion.ul variants={DEFAULT_VARIANTS}>
+      <ul>
         <li>
           <strong>Design:</strong> Master visual composition with intuitive
           vector and frame tooling, build with comprehensive component
@@ -87,22 +82,22 @@ export default function Home() {
           high-level designs and prototypes into production-ready software,
           effortlessly.
         </li>
-      </motion.ul>
+      </ul>
 
-      <motion.p variants={DEFAULT_VARIANTS}>
+      <p>
         Together, these capabilities create a true source of truth for modern
         software, eliminating handoffs and bridging the gap between design and
         production code.
-      </motion.p>
+      </p>
 
-      <motion.h2 variants={DEFAULT_VARIANTS}>Why Now?</motion.h2>
+      <h2>Why Now?</h2>
 
-      <motion.p variants={DEFAULT_VARIANTS}>
+      <p>
         Three shifts in how we build software make this the perfect moment for
         Rune:
-      </motion.p>
+      </p>
 
-      <motion.ul variants={DEFAULT_VARIANTS}>
+      <ul>
         <li>
           <strong>The Rise of the Full-Stack Builder:</strong> Teams are
           increasingly built around individuals who can own the entire product
@@ -120,13 +115,11 @@ export default function Home() {
           creation and implementation happen in the same space, at the same
           time.
         </li>
-      </motion.ul>
+      </ul>
 
-      <motion.hr />
+      <hr />
 
-      <motion.p className="font-semibold">
-        Rune - A new way to build software.
-      </motion.p>
+      <p className="font-semibold">Rune - A new way to build software.</p>
     </motion.div>
   );
 }
