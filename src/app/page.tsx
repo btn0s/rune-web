@@ -24,8 +24,8 @@ export default async function Home() {
 
   return (
     <MotionLoader>
-      <div className="container mx-auto px-4 max-w-prose flex flex-col gap-12 items-start py-12 sm:py-32">
-        <div className="bg-white rounded-full py-1 px-4 flex items-center gap-1 border shadow font-bold">
+      <div className="container mx-auto px-4 max-w-prose flex flex-col gap-10 items-start py-12 sm:py-32">
+        <div className="flex items-center gap-1 font-bold">
           <PiAsteriskBold /> Rune
         </div>
         <div className="prose prose-neutral dark:prose-invert">
