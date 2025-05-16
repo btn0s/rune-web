@@ -34,15 +34,33 @@ export default function Home() {
       </div>
 
       <p>
-        AI is enabling a new kind of builder—someone who can command both the
-        visual language of design and the logical flow of engineering with the
-        power of intent. As these tools evolve, we're seeing teams transform,
-        increasingly built around builders who move seamlessly from ideas to
-        execution without the inefficiencies of expensive handoffs.
+        Today's software landscape is evolving rapidly. The lines between
+        designers, engineers, and product managers are blurring, giving rise to
+        a new kind of professional—the builder. These versatile creators move
+        fluidly between visual thinking and technical implementation, driven by
+        a desire to bring ideas to life without traditional barriers.
       </p>
 
       <p>
-        This future needs tools built for these builders—expressive and
+        Historically, product creation has been fragmented across specialized
+        roles. Designers crafted visuals, engineers wrote code, and product
+        managers coordinated between them—with countless hours lost to handoffs,
+        translations, and misalignments. This siloed approach created friction
+        that slowed innovation and limited creative potential.
+      </p>
+
+      <p>
+        AI is at the forefront of this new era, helping teams speak a unified
+        language of creation. It bridges the gap between design and engineering,
+        enabling entire teams to collaborate through the power of intent rather
+        than specialized technical vocabularies. As these tools evolve,
+        organizations are transforming around this shared understanding, where
+        ideas flow seamlessly from conception to execution without the
+        inefficiencies of translation between disciplines.
+      </p>
+
+      <p>
+        We're building a tool for this collaborative future—expressive and
         intent-driven, AI-native, and designed for the continuous flow from
         imagination to reality.
       </p>
