@@ -35,7 +35,7 @@ export default function Home() {
         <PiAsteriskBold /> Rune
       </div>
 
-      <Image src={demoImg} alt="Rune" />
+      <Image className="rounded-lg border shadow" src={demoImg} alt="Rune" />
 
       <p>
         AI is reshaping how we build software. The old boundaries between
