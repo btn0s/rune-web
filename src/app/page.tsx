@@ -117,16 +117,12 @@ export default function Home() {
           software.
         </li>
         <li>
-          <strong>Disciplines are converging:</strong> The lines between design,
-          engineering, and product are dissolving—teams are becoming
-          increasingly generalist, yet current tools don't cater to these new
-          builders.
+          <strong>User expectations are evolving rapidly:</strong> Today's users
+          demand intuitive, high-quality experiences delivered at unprecedented
+          speed, forcing teams to find new ways to collaborate and iterate that
+          traditional workflows cannot support.
         </li>
       </ul>
-      <p>
-        Rune is built for this new era—where boundaries disappear, AI is a true
-        partner, and teams create as one.
-      </p>
 
       <hr />
 
