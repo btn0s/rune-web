@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import { PiAsteriskBold } from "react-icons/pi";
+import demoImg from "@/assets/images/rune.png";
 
 const DEFAULT_TRANSITION = {
   duration: 0.5,
@@ -32,6 +34,8 @@ export default function Home() {
       <div className="flex items-center gap-1 font-bold">
         <PiAsteriskBold /> Rune
       </div>
+
+      <Image src={demoImg} alt="Rune" />
 
       <p>
         AI is reshaping how we build software. The old boundaries between
