@@ -110,9 +110,9 @@ export default function Home() {
         </li>
         <li>
           <strong>AI is extremely powerful—when guided well:</strong> Great
-          outputs require great inputs, and AI is changing how we build software
-          but current tools rely on text input and chat interfaces, which are
-          limiting and inefficient for modeling complex software.
+          outputs require precise inputs, but today's AI tools are trapped
+          behind text interfaces that make it hard to express the complexity of
+          software.
         </li>
         <li>
           <strong>Market pressure demands unprecedented speed:</strong>{" "}
