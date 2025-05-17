@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rune — A New Way to Build Software",
+  title: "Rune — A Better Way to Build Software",
   description:
     "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
   openGraph: {
-    title: "Rune — A New Way to Build Software",
+    title: "Rune — A Better Way to Build Software",
     description:
       "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
     url: "https://rune.dev",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Rune - A New Way to Build Software",
+        alt: "Rune - A Better Way to Build Software",
       },
     ],
     locale: "en_US",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rune — A New Way to Build Software",
+    title: "Rune — A Better Way to Build Software",
     description:
       "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
     images: ["/og.png"],

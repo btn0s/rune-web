@@ -59,7 +59,7 @@ export default function Home() {
 
       <p className="font-semibold">
         Rune brings everyone—design, engineering, and product—together in a
-        single, visual workspace.
+        single, visual workspace:
       </p>
 
       <p>
@@ -101,8 +101,6 @@ export default function Home() {
       </p>
 
       <h2>Why Now?</h2>
-
-      <p>The way software is built is changing fast:</p>
       <ul>
         <li>
           <strong>Design and code are converging:</strong> Bleeding edge teams
@@ -111,16 +109,16 @@ export default function Home() {
           become the norm.
         </li>
         <li>
-          <strong>AI is a true creative partner—when guided well:</strong> AI is
-          now extremely powerful, but current tools rely on text input and chat
-          interfaces, which are limiting and inefficient for modeling complex
-          software.
+          <strong>AI is extremely powerful—when guided well:</strong> Great
+          outputs require great inputs, and AI is changing how we build software
+          but current tools rely on text input and chat interfaces, which are
+          limiting and inefficient for modeling complex software.
         </li>
         <li>
-          <strong>User expectations are evolving rapidly:</strong> Today's users
-          demand intuitive, high-quality experiences delivered at unprecedented
-          speed, forcing teams to find new ways to collaborate and iterate that
-          traditional workflows cannot support.
+          <strong>Market pressure demands unprecedented speed:</strong>{" "}
+          Companies can no longer afford months-long development
+          cycles—successful teams need tools that collapse ideation, creation,
+          and shipping into days, not quarters.
         </li>
       </ul>
 
