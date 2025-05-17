@@ -55,12 +55,11 @@ export default function Home() {
 
       <p className="font-semibold">
         Rune brings everyone—design, engineering, and product—together in a
-        single, visual workspace. Teams can design interfaces and connect logic
-        side by side, seeing their product take shape as they work. AI
-        translates these visual specifications directly into real, usable
-        software, so your team's intent is always reflected in the product
-        itself—no handoffs, no miscommunication, just a seamless path from idea
-        to reality.
+        single, visual workspace. Teams design interfaces and connect logic side
+        by side, watching their product take shape as they work. AI translates
+        these visual specifications directly into real, usable software, so your
+        team's intent is always reflected in the product—no handoffs, no
+        miscommunication, just a seamless path from idea to reality.
       </p>
 
       <h2>Our Vision</h2>
