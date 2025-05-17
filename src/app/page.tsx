@@ -53,12 +53,14 @@ export default function Home() {
         this creative unity, turning ideas into reality without friction.
       </p>
 
-      <p>
-        Rune unifies design, engineering, and product into a single canvas. No
-        more handoffs or translation layers—just continuous creation, where
-        every change is instantly realized as real, working software, ready to
-        evolve. With Rune, teams create, iterate, and ship as one—bridging
-        expressive intent and production-ready results, all with the help of AI.
+      <p className="font-semibold">
+        Rune brings everyone—design, engineering, and product—together in a
+        single, visual workspace. Teams can design interfaces and connect logic
+        side by side, seeing their product take shape as they work. AI
+        translates these visual specifications directly into real, usable
+        software, so your team's intent is always reflected in the product
+        itself—no handoffs, no miscommunication, just a seamless path from idea
+        to reality.
       </p>
 
       <h2>Our Vision</h2>
@@ -71,27 +73,24 @@ export default function Home() {
 
       <ul>
         <li>
-          <strong>Design:</strong> Express ideas on a fluid, infinite canvas
-          with familiar tools. Create visually compelling experiences with
-          precision and freedom.
+          <strong>Design:</strong> Express your ideas on an infinite canvas with
+          familiar tools. Create beautiful, precise experiences.
         </li>
         <li>
-          <strong>Build:</strong> Add logic and interactivity directly to
-          designs. Remove the barrier between visual design and functional
-          implementation—so every change builds real, working software, not just
-          a mockup.
+          <strong>Build:</strong> Add logic and interactivity directly to your
+          designs. Every change makes real, working software—not just a mockup.
         </li>
         <li>
-          <strong>Ship:</strong> Convert designs to production-ready code in
-          moments. Bridge the gap between prototypes and real, production-grade
-          software with AI that understands your goals.
+          <strong>Ship:</strong> Turn your designs into real, usable code in
+          moments. No more redoing work—your ideas become real products, ready
+          to use.
         </li>
       </ul>
 
       <p>
-        Together, these capabilities make it possible to move from concept to
-        production in one continuous flow—where every change results in real,
-        interactive software, not just a prototype or mockup.
+        Together, these features let you go from idea to real product in one
+        smooth process—so every change you make is reflected in real, usable
+        software.
       </p>
 
       <h2>Why Now?</h2>
