@@ -55,10 +55,14 @@ export default function Home() {
 
       <p className="font-semibold">
         Rune brings everyone—design, engineering, and product—together in a
-        single, visual workspace. Teams design interfaces and connect logic side
-        by side, watching their product take shape as they work. AI translates
-        these visual specifications directly into real, usable software, so your
-        team's intent is always reflected in the product—no handoffs, no
+        single, visual workspace.
+      </p>
+
+      <p>
+        Teams design interfaces and connect logic side by side, watching their
+        product take shape as they work. AI translates these visual
+        specifications directly into real, usable software, so your team's
+        intent is always reflected in the product—no handoffs, no
         miscommunication, just a seamless path from idea to reality.
       </p>
 
@@ -122,7 +126,7 @@ export default function Home() {
 
       <hr />
 
-      <p className="font-semibold">Rune – Unifying creation for the AI era.</p>
+      <p className="font-semibold">Rune – A better way to build software.</p>
     </motion.div>
   );
 }
