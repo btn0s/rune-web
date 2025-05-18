@@ -58,17 +58,7 @@ export default function Home() {
 
       <p className="font-semibold">
         Rune is purpose-built for these teams of the future—a unified creative
-        platform where vision becomes reality:
-      </p>
-
-      <p>
-        In this single, visual workspace, everyone—designers, engineers, and
-        product leaders—collaborates seamlessly. Teams craft interfaces and
-        connect logic side by side, watching their product take shape in real
-        time. AI instantly translates these visual intentions into
-        production-ready software, ensuring your team's vision manifests without
-        compromise—no handoffs, no translation errors, just the purest path from
-        imagination to implementation.
+        platform where vision becomes reality.
       </p>
 
       <h2>Our Vision</h2>
@@ -76,7 +66,9 @@ export default function Home() {
       <p>
         By blending the precision of Figma, the interactive logic of Unreal
         Engine Blueprints, and the AI-powered code generation of Cursor, Rune
-        creates a seamless journey from idea to implementation.
+        creates a seamless journey from idea to implementation—all powered by
+        cutting-edge AI that translates visual intentions directly into
+        production-ready software.
       </p>
 
       <ul>
@@ -98,7 +90,7 @@ export default function Home() {
       <p>
         Together, these features let you go from idea to real product in one
         smooth process—so every change you make is reflected in real, usable
-        software.
+        software, with no handoffs or translation errors.
       </p>
 
       <h2>Why Now?</h2>
