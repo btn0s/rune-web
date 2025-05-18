@@ -238,162 +238,49 @@ function Slide2() {
 
 // Slide 3: Why Now: Convergence & Cursor Proof-Point
 function Slide3() {
-  const timelineData = [
-    {
-      year: 2016,
-      name: "Figma",
-      users: 20,
-      description: "Cloud-native design",
-    },
-    { year: 2023, name: "Cursor", users: 200, description: "AI-first coding" },
-    {
-      year: 2025,
-      name: "Rune",
-      users: 0,
-      description: "Design & code unified",
-    },
-  ];
-
-  const chartConfig = {
-    figma: {
-      label: "Figma",
-      color: "hsl(270, 70%, 50%)",
-    },
-    cursor: {
-      label: "Cursor",
-      color: "hsl(200, 70%, 50%)",
-    },
-    rune: {
-      label: "Rune",
-      color: "hsl(10, 70%, 50%)",
-    },
-  };
-
   return (
-    <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="p-12 flex flex-1 h-full">
-        <div className="w-1/2 flex flex-col pr-8">
-          <div>
-            <Badge
-              variant="secondary"
-              className="mb-2 text-xs font-medium uppercase tracking-wider"
-            >
-              Timing
-            </Badge>
-            <h1 className="text-4xl font-bold mb-3">
-              Why Now: Convergence & Cursor Proof-Point
-            </h1>
+    <Slide>
+      <div className="flex flex-col gap-8 self-center p-4 flex-1">
+        <h1 className="text-4xl font-bold text-balance">
+          Why Now: Convergence & Cursor Proof-Point
+        </h1>
 
-            <div className="flex items-center gap-2 mb-8">
-              <div className="h-1 w-12 bg-primary rounded-full"></div>
-              <h2 className="text-2xl font-semibold">
-                AI coding is mainstream – the next leap is visual collaboration.
-              </h2>
-            </div>
-          </div>
+        <p className="font-medium text-balance">
+          AI coding is mainstream – the next leap is visual collaboration.
+        </p>
 
-          <div className="flex-1 flex flex-col justify-center space-y-6">
-            <div className="space-y-4">
-              {timelineData.map((item) => (
-                <div
-                  key={item.year}
-                  className={cn(
-                    "p-4 rounded-lg border",
-                    item.year === 2025
-                      ? "bg-primary/10 border-primary/20"
-                      : "bg-muted/30"
-                  )}
-                >
-                  <div className="flex items-start gap-3">
-                    <Badge
-                      className="shrink-0 mt-0.5"
-                      variant={item.year === 2025 ? "default" : "secondary"}
-                    >
-                      {item.year}
-                    </Badge>
-                    <div>
-                      <h3 className="text-lg font-bold mb-1">{item.name}</h3>
-                      <p className="text-muted-foreground">
-                        {item.description}
-                      </p>
+        <ul className="space-y-2">
+          <li>
+            <span>
+              <Badge variant="secondary">2016</Badge> Figma pioneered
+              cloud-native design
+            </span>
+          </li>
+          <li>
+            <span>
+              <Badge variant="secondary">2023</Badge> Cursor proved AI-first
+              coding (200k+ MAU)
+            </span>
+          </li>
+          <li>
+            <span>
+              <Badge variant="default">2025</Badge> Rune will unify design &
+              code
+            </span>
+          </li>
+        </ul>
 
-                      {item.year === 2023 && (
-                        <p className="mt-2 text-sm bg-secondary/20 p-2 rounded">
-                          <span className="font-medium">Rapid 200k+ MAU</span>{" "}
-                          with strong paid user adoption
-                        </p>
-                      )}
+        <p className="font-medium">
+          The moment for design + code unification is now
+        </p>
 
-                      {item.year === 2025 && (
-                        <p className="mt-2 text-sm bg-primary/20 p-2 rounded">
-                          <span className="font-medium">Visual + AI power</span>{" "}
-                          eliminates handoffs entirely
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-sm italic flex items-center gap-2">
-              <span className="h-1 w-3 bg-muted-foreground rounded-full"></span>
-              *Cursor usage data from public blog posts and press coverage
-            </div>
-          </div>
-        </div>
-
-        <div className="w-1/2 h-full flex flex-col justify-center">
-          <div className="border rounded-lg p-10 bg-muted/30 h-[500px] flex flex-col justify-center relative">
-            <div className="w-full h-1 bg-muted rounded-full absolute top-1/2"></div>
-
-            <div className="flex justify-between relative">
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full bg-secondary/20 border-4 border-background flex items-center justify-center mb-4">
-                  <Badge variant="secondary" className="text-lg px-3 py-1">
-                    2016
-                  </Badge>
-                </div>
-                <div className="text-center space-y-1">
-                  <h4 className="font-bold text-lg">Figma</h4>
-                  <p className="text-sm text-muted-foreground">Cloud design</p>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full bg-secondary/20 border-4 border-background flex items-center justify-center mb-4">
-                  <Badge variant="secondary" className="text-lg px-3 py-1">
-                    2023
-                  </Badge>
-                </div>
-                <div className="text-center space-y-1">
-                  <h4 className="font-bold text-lg">Cursor</h4>
-                  <p className="text-sm text-muted-foreground">AI coding</p>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <div className="w-20 h-20 rounded-full bg-primary/20 border-4 border-background flex items-center justify-center mb-4">
-                  <Badge variant="default" className="text-lg px-3 py-1">
-                    2025
-                  </Badge>
-                </div>
-                <div className="text-center space-y-1">
-                  <h4 className="font-bold text-lg">Rune</h4>
-                  <p className="text-sm text-muted-foreground">Unified</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-16 text-center px-8">
-              <p className="text-lg font-medium">
-                The moment for design + code unification is now
-              </p>
-            </div>
-          </div>
+        <div className="text-xs text-muted-foreground">
+          *Cursor usage data from public blog posts and press coverage
         </div>
       </div>
-    </div>
+
+      <div className="aspect-square border bg-muted/30 rounded-lg flex-1"></div>
+    </Slide>
   );
 }
 
