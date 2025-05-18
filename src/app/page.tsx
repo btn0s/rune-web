@@ -64,11 +64,11 @@ export default function Home() {
       <h2>Our Vision</h2>
 
       <p>
-        By blending the precision of Figma, the interactive logic of Unreal
-        Engine Blueprints, and the AI-powered code generation of Cursor, Rune
-        creates a seamless journey from idea to implementation—all powered by
-        cutting-edge AI that translates visual intentions directly into
-        production-ready software.
+        We're combining three powerful concepts into one revolutionary platform:
+        the visual precision of design tools, the node-based logic of visual
+        programming, and the generative capabilities of modern AI. This
+        technical foundation enables a new way of building that wasn't possible
+        before.
       </p>
 
       <ul>
@@ -88,9 +88,10 @@ export default function Home() {
       </ul>
 
       <p>
-        Together, these features let you go from idea to real product in one
-        smooth process—so every change you make is reflected in real, usable
-        software, with no handoffs or translation errors.
+        Together, these capabilities create a seamless journey from idea to
+        implementation. The entire process is powered by cutting-edge AI that
+        translates visual intentions directly into production-ready software,
+        eliminating handoffs and translation errors.
       </p>
 
       <h2>Why Now?</h2>
