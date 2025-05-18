@@ -40,8 +40,7 @@ export default function Home() {
       <p>
         AI is reshaping how we build software. The old boundaries between
         designers, engineers, and product managers are dissolving, giving rise
-        to a new era where roles blend and innovation accelerates through true
-        collaboration.
+        to a new era where roles blend and ideas can thrive without boundaries.
       </p>
 
       <p>
