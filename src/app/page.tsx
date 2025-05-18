@@ -38,22 +38,22 @@ export default function Home() {
       <Image className="rounded-lg border shadow" src={demoImg} alt="Rune" />
 
       <p>
-        AI is reshaping how we build software. The old boundaries between
-        designers, engineers, and product managers are dissolving, giving rise
-        to a new era where roles blend and ideas can thrive without boundaries.
+        AI is reshaping software development. Boundaries between designers,
+        engineers, and product managers are dissolving, creating a new era where
+        roles blend and ideas thrive without constraints.
       </p>
 
       <p>
-        For too long, product creation has been fragmented—designers focused on
-        visuals, engineers on code, and product managers on translation. This
-        siloed process slowed progress and stifled creativity.
+        Product creation has long been fragmented—designers on visuals,
+        engineers on code, product managers on translation—stifling creativity
+        and slowing innovation.
       </p>
 
       <p>
-        Now, teams can create together in a shared language. AI bridges the gap
-        between design and implementation, enabling collaboration through
-        intent, not just technical specs. The teams of tomorrow will thrive on
-        this creative unity, turning ideas into reality without friction.
+        Now, teams create together through a shared language. AI bridges design
+        and implementation, enabling true collaboration. Tomorrow's teams will
+        thrive on this creative unity, turning ideas into reality without
+        friction.
       </p>
 
       <p className="font-semibold">
