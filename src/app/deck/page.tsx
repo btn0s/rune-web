@@ -37,8 +37,42 @@ import {
 } from "recharts";
 import { ArrowLeft, ArrowRight, Users, Code } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 
 const TOTAL_SLIDES = 8;
+const CONTACT_EMAIL = "brendan.t.norris@gmail.com";
+const CONTACT_WEBSITE = "rune.design";
+const CONTACT_VERSION = "Deck v May 2025";
+
+const Slide: React.FC<{ children: React.ReactNode; className?: string }> = ({
+  children,
+  className,
+}) => {
+  return (
+    <div className="h-full relative aspect-video flex flex-col bg-card">
+      <div className="flex justify-between p-4">
+        <Badge variant="outline">Private beta opening soon.</Badge>
+
+        <Badge variant="outline">Seeking technical co-founder</Badge>
+      </div>
+      <div
+        className={cn("p-4 pt-0 flex justify-between flex-1 h-full", className)}
+      >
+        {children}
+      </div>
+      <div className="bg-muted text-muted-foreground p-4 text-sm flex justify-between border-t border-primary/10">
+        <span>{CONTACT_EMAIL}</span>
+        <span>
+          <a href={CONTACT_WEBSITE} target="_blank" rel="noopener noreferrer">
+            {CONTACT_WEBSITE}
+          </a>
+        </span>
+        <span>{CONTACT_VERSION}</span>
+      </div>
+    </div>
+  );
+};
 
 export default function SlideDeck() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -112,64 +146,33 @@ export default function SlideDeck() {
 // Slide 1: Cover / Executive Summary
 function Slide1() {
   return (
-    <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="flex-1 flex flex-col items-center justify-center px-16 py-12 relative overflow-hidden">
-        <Badge
-          variant="outline"
-          className="mb-8 text-xs font-medium uppercase tracking-wider border-primary/20 text-primary px-3 py-1"
-        >
-          Presentation Deck
-        </Badge>
+    <Slide>
+      <div className="flex flex-col gap-8 self-center p-4">
+        <div className="flex items-center gap-2">
+          <PiAsteriskBold className="text-3xl text-primary" />
+          <h1 className="text-5xl font-bold">Rune</h1>
+        </div>
 
-        <div className="text-center max-w-3xl">
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <PiAsteriskBold className="text-3xl text-primary" />
-            <h1 className="text-5xl font-bold">Rune</h1>
-          </div>
+        <h2 className="text-2xl font-medium text-muted-foreground text-balance">
+          AI-native visual development environment that unifies design & code.
+        </h2>
 
-          <h2 className="text-2xl font-medium text-muted-foreground mb-8">
-            AI-native visual development environment that unifies design & code.
-          </h2>
-
-          <div className="bg-primary/5 border border-primary/10 rounded-lg p-6 mb-10 max-w-2xl mx-auto">
-            <p className="text-lg">
-              Rune collapses design, logic, and deploy into a single,
-              multiplayer canvas powered by an AI compiler.
+        <div className="flex items-center gap-3">
+          <Avatar className="size-10">
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>BTN</AvatarFallback>
+          </Avatar>
+          <div className="flex flex-col">
+            <p className="font-semibold">bt norris</p>
+            <p className="text-sm text-muted-foreground">
+              Backbone Labs, Amex R&D, ConsenSys
             </p>
-            <p className="text-lg font-semibold text-primary mt-2">
-              Private beta opening soon.
-            </p>
-          </div>
-
-          <div className="mt-12 grid grid-cols-2 gap-6 text-start max-w-lg mx-auto">
-            <div>
-              <Badge variant="outline" className="mb-2">
-                Founder
-              </Badge>
-              <p className="font-semibold">Brendan Norris</p>
-              <p className="text-sm text-muted-foreground">
-                ex-Backbone Labs, Amex R&D, ConsenSys
-              </p>
-            </div>
-            <div>
-              <Badge variant="outline" className="mb-2">
-                Status
-              </Badge>
-              <p className="font-semibold">Functional prototype live</p>
-              <p className="text-sm text-muted-foreground">
-                Inviting design-partner teams • Seeking technical co-founder
-              </p>
-            </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-primary/10 p-3 text-sm flex justify-between border-t border-primary/10">
-        <span>hey@rune.design</span>
-        <span>rune.design</span>
-        <span>Deck v May 2025</span>
-      </div>
-    </div>
+      <div className="aspect-square border bg-muted/30 rounded-lg"></div>
+    </Slide>
   );
 }
 
@@ -197,95 +200,39 @@ function Slide2() {
   };
 
   return (
-    <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="p-12 flex flex-col h-full">
-        <div>
-          <Badge
-            variant="secondary"
-            className="mb-2 text-xs font-medium uppercase tracking-wider"
-          >
-            Problem
-          </Badge>
-          <h1 className="text-4xl font-bold mb-3">The Cost of Handoffs</h1>
+    <Slide className="items-center">
+      <div className="flex flex-col gap-8 self-center p-4 flex-1">
+        <h1 className="text-4xl font-bold text-balance">
+          Siloed tooling wastes ~30% of every product cycle.
+        </h1>
 
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-1 w-12 bg-primary rounded-full"></div>
-            <h2 className="text-2xl font-semibold">
-              Siloed tooling wastes ~30% of every product cycle.
-            </h2>
-          </div>
-        </div>
+        <p className="font-medium text-balance">
+          Each handoff loop costs days to weeks, introduces errors, and drains
+          creative momentum.
+        </p>
 
-        <div className="flex-1 flex items-center gap-8">
-          <div className="w-1/2 space-y-6">
-            <ul className="space-y-3">
-              <li className="flex gap-3 items-start bg-secondary/20 p-3 rounded-lg border border-secondary/30">
-                <div className="h-7 w-7 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center shrink-0 mt-0.5">
-                  1
-                </div>
-                <div>
-                  <p className="font-medium">Designers iterate in Figma.</p>
-                  <p className="text-sm text-muted-foreground">
-                    Creating high-fidelity mockups and prototypes
-                  </p>
-                </div>
-              </li>
-              <li className="flex gap-3 items-start bg-secondary/20 p-3 rounded-lg border border-secondary/30">
-                <div className="h-7 w-7 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center shrink-0 mt-0.5">
-                  2
-                </div>
-                <div>
-                  <p className="font-medium">Engineers re-create UI in code.</p>
-                  <p className="text-sm text-muted-foreground">
-                    Manually translating designs to implementations
-                  </p>
-                </div>
-              </li>
-              <li className="flex gap-3 items-start bg-secondary/20 p-3 rounded-lg border border-secondary/30">
-                <div className="h-7 w-7 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center shrink-0 mt-0.5">
-                  3
-                </div>
-                <div>
-                  <p className="font-medium">Product managers clarify gaps.</p>
-                  <p className="text-sm text-muted-foreground">
-                    Managing discrepancies between design and implementation
-                  </p>
-                </div>
-              </li>
-            </ul>
+        <ol className="list-decimal list-inside">
+          <li>
+            <span>Product creates a spec.</span>
+          </li>
+          <li>
+            <span>Designers iterate in Figma.</span>
+          </li>
+          <li>
+            <span>Engineers re-create UI in code.</span>
+          </li>
+          <li>
+            <span>Repeat.</span>
+          </li>
+        </ol>
 
-            <div className="p-4 border border-destructive/30 rounded-lg bg-destructive/10 mt-4">
-              <p className="font-medium text-destructive">
-                Each loop costs days to weeks, introduces errors, and drains
-                creative momentum.
-              </p>
-            </div>
-
-            <div className="text-sm italic flex items-center gap-2 mt-3">
-              <span className="h-1 w-3 bg-muted-foreground rounded-full"></span>
-              Source: McKinsey Dev-Productivity Report 2024
-            </div>
-          </div>
-
-          <div className="w-1/2 h-full flex flex-col">
-            <div className="flex-1 border rounded-lg p-6 bg-muted/30 flex items-center">
-              <ChartContainer config={chartConfig} className="w-full h-[300px]">
-                <BarChart data={handoffData}>
-                  <CartesianGrid vertical={false} />
-                  <XAxis dataKey="name" tickLine={false} axisLine={false} />
-                  <Bar
-                    dataKey="value"
-                    radius={[4, 4, 0, 0]}
-                    fill="var(--color-design)"
-                  />
-                  <ChartTooltip content={<ChartTooltipContent />} />
-                </BarChart>
-              </ChartContainer>
-            </div>
-          </div>
+        <div className="text-xs text-muted-foreground">
+          Source: McKinsey Dev-Productivity Report 2024
         </div>
       </div>
-    </div>
+
+      <div className="aspect-square border bg-muted/30 rounded-lg flex-1"></div>
+    </Slide>
   );
 }
 
@@ -324,83 +271,125 @@ function Slide3() {
 
   return (
     <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="p-12 flex flex-col h-full">
-        <div>
-          <Badge
-            variant="secondary"
-            className="mb-2 text-xs font-medium uppercase tracking-wider"
-          >
-            Timing
-          </Badge>
-          <h1 className="text-4xl font-bold mb-3">
-            Why Now: Convergence & Cursor Proof-Point
-          </h1>
+      <div className="p-12 flex flex-1 h-full">
+        <div className="w-1/2 flex flex-col pr-8">
+          <div>
+            <Badge
+              variant="secondary"
+              className="mb-2 text-xs font-medium uppercase tracking-wider"
+            >
+              Timing
+            </Badge>
+            <h1 className="text-4xl font-bold mb-3">
+              Why Now: Convergence & Cursor Proof-Point
+            </h1>
 
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-1 w-12 bg-primary rounded-full"></div>
-            <h2 className="text-2xl font-semibold">
-              AI coding is mainstream – the next leap is visual collaboration.
-            </h2>
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-1 w-12 bg-primary rounded-full"></div>
+              <h2 className="text-2xl font-semibold">
+                AI coding is mainstream – the next leap is visual collaboration.
+              </h2>
+            </div>
           </div>
-        </div>
 
-        <div className="flex-1 flex flex-col">
-          <div className="grid grid-cols-3 gap-6">
-            {timelineData.map((item) => (
-              <div key={item.year} className="flex flex-col">
-                <Badge
-                  className="self-start mb-4 text-base"
-                  variant={item.year === 2025 ? "default" : "secondary"}
-                >
-                  {item.year}
-                </Badge>
+          <div className="flex-1 flex flex-col justify-center space-y-6">
+            <div className="space-y-4">
+              {timelineData.map((item) => (
                 <div
+                  key={item.year}
                   className={cn(
-                    "p-6 rounded-lg border flex-1 flex flex-col",
+                    "p-4 rounded-lg border",
                     item.year === 2025
                       ? "bg-primary/10 border-primary/20"
                       : "bg-muted/30"
                   )}
                 >
-                  <h3 className="text-2xl font-bold mb-2">{item.name}</h3>
-                  <p className="text-muted-foreground">{item.description}</p>
+                  <div className="flex items-start gap-3">
+                    <Badge
+                      className="shrink-0 mt-0.5"
+                      variant={item.year === 2025 ? "default" : "secondary"}
+                    >
+                      {item.year}
+                    </Badge>
+                    <div>
+                      <h3 className="text-lg font-bold mb-1">{item.name}</h3>
+                      <p className="text-muted-foreground">
+                        {item.description}
+                      </p>
 
-                  {item.year === 2023 && (
-                    <div className="mt-auto pt-4">
-                      <div className="bg-secondary/20 p-3 rounded-lg border border-secondary/30">
-                        <p className="font-medium">Rapid 200k+ MAU</p>
-                        <p className="text-sm text-muted-foreground">
-                          Strong paid user adoption
+                      {item.year === 2023 && (
+                        <p className="mt-2 text-sm bg-secondary/20 p-2 rounded">
+                          <span className="font-medium">Rapid 200k+ MAU</span>{" "}
+                          with strong paid user adoption
                         </p>
-                      </div>
-                    </div>
-                  )}
+                      )}
 
-                  {item.year === 2025 && (
-                    <div className="mt-auto pt-4">
-                      <div className="bg-primary/20 p-3 rounded-lg border border-primary/30">
-                        <p className="font-medium">Visual + AI power</p>
-                        <p className="text-sm text-muted-foreground">
-                          Eliminates handoffs entirely
+                      {item.year === 2025 && (
+                        <p className="mt-2 text-sm bg-primary/20 p-2 rounded">
+                          <span className="font-medium">Visual + AI power</span>{" "}
+                          eliminates handoffs entirely
                         </p>
-                      </div>
+                      )}
                     </div>
-                  )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-sm italic flex items-center gap-2">
+              <span className="h-1 w-3 bg-muted-foreground rounded-full"></span>
+              *Cursor usage data from public blog posts and press coverage
+            </div>
+          </div>
+        </div>
+
+        <div className="w-1/2 h-full flex flex-col justify-center">
+          <div className="border rounded-lg p-10 bg-muted/30 h-[500px] flex flex-col justify-center relative">
+            <div className="w-full h-1 bg-muted rounded-full absolute top-1/2"></div>
+
+            <div className="flex justify-between relative">
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full bg-secondary/20 border-4 border-background flex items-center justify-center mb-4">
+                  <Badge variant="secondary" className="text-lg px-3 py-1">
+                    2016
+                  </Badge>
+                </div>
+                <div className="text-center space-y-1">
+                  <h4 className="font-bold text-lg">Figma</h4>
+                  <p className="text-sm text-muted-foreground">Cloud design</p>
                 </div>
               </div>
-            ))}
-          </div>
 
-          <div className="mt-8 relative">
-            <div className="w-full h-1 bg-muted rounded-full"></div>
-            <div className="absolute left-1/6 -top-2 h-5 w-5 rounded-full bg-secondary border-4 border-background"></div>
-            <div className="absolute left-1/2 -top-2 h-5 w-5 rounded-full bg-secondary border-4 border-background"></div>
-            <div className="absolute left-5/6 -top-2 h-5 w-5 rounded-full bg-primary border-4 border-background"></div>
-          </div>
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full bg-secondary/20 border-4 border-background flex items-center justify-center mb-4">
+                  <Badge variant="secondary" className="text-lg px-3 py-1">
+                    2023
+                  </Badge>
+                </div>
+                <div className="text-center space-y-1">
+                  <h4 className="font-bold text-lg">Cursor</h4>
+                  <p className="text-sm text-muted-foreground">AI coding</p>
+                </div>
+              </div>
 
-          <div className="text-sm italic flex items-center gap-2 mt-4">
-            <span className="h-1 w-3 bg-muted-foreground rounded-full"></span>
-            *Cursor usage data from public blog posts and press coverage
+              <div className="flex flex-col items-center">
+                <div className="w-20 h-20 rounded-full bg-primary/20 border-4 border-background flex items-center justify-center mb-4">
+                  <Badge variant="default" className="text-lg px-3 py-1">
+                    2025
+                  </Badge>
+                </div>
+                <div className="text-center space-y-1">
+                  <h4 className="font-bold text-lg">Rune</h4>
+                  <p className="text-sm text-muted-foreground">Unified</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-16 text-center px-8">
+              <p className="text-lg font-medium">
+                The moment for design + code unification is now
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -412,50 +401,26 @@ function Slide3() {
 function Slide4() {
   return (
     <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="p-12 flex flex-col h-full">
-        <div>
-          <Badge
-            variant="secondary"
-            className="mb-2 text-xs font-medium uppercase tracking-wider"
-          >
-            Experience
-          </Badge>
-          <h1 className="text-4xl font-bold mb-3">What Rune Feels Like</h1>
+      <div className="p-12 flex flex-1 h-full">
+        <div className="w-1/2 flex flex-col pr-8">
+          <div>
+            <Badge
+              variant="secondary"
+              className="mb-2 text-xs font-medium uppercase tracking-wider"
+            >
+              Experience
+            </Badge>
+            <h1 className="text-4xl font-bold mb-3">What Rune Feels Like</h1>
 
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-1 w-12 bg-primary rounded-full"></div>
-            <h2 className="text-2xl font-semibold">
-              Sketch → Connect Logic → Ship – all in one flow.
-            </h2>
-          </div>
-        </div>
-
-        <div className="flex-1 flex gap-8">
-          <div className="w-1/2 flex flex-col">
-            <div className="border rounded-lg overflow-hidden bg-muted/30 flex-1 grid grid-rows-3 gap-4 p-4">
-              <div className="bg-card rounded-lg flex items-center justify-center border p-6">
-                <p className="font-medium">
-                  1. Draw UI elements on the infinite canvas
-                </p>
-              </div>
-              <div className="bg-card rounded-lg flex items-center justify-center border p-6">
-                <p className="font-medium">
-                  2. Drag node connections to add behavior
-                </p>
-              </div>
-              <div className="bg-card rounded-lg flex items-center justify-center border p-6">
-                <p className="font-medium">
-                  3. Press <Badge variant="default">Run</Badge> → live app
-                  appears instantly
-                </p>
-              </div>
-              <div className="text-sm text-muted-foreground text-center col-span-3 mt-2">
-                [15-sec looping GIF would show this workflow]
-              </div>
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-1 w-12 bg-primary rounded-full"></div>
+              <h2 className="text-2xl font-semibold">
+                Sketch → Connect Logic → Ship – all in one flow.
+              </h2>
             </div>
           </div>
 
-          <div className="w-1/2 flex flex-col justify-center">
+          <div className="flex-1 flex flex-col justify-center space-y-6">
             <ul className="space-y-5">
               <li className="flex gap-4 items-start bg-secondary/20 p-4 rounded-lg border border-secondary/30">
                 <div className="h-10 w-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0">
@@ -494,8 +459,50 @@ function Slide4() {
               </li>
             </ul>
 
-            <div className="mt-6 text-sm italic bg-muted p-4 rounded-lg border">
+            <div className="text-sm italic bg-muted p-4 rounded-lg border">
               Captured from internal build • May 2025. Tech risk retired.
+            </div>
+          </div>
+        </div>
+
+        <div className="w-1/2 h-full flex flex-col justify-center">
+          <div className="border rounded-lg overflow-hidden bg-muted/30 h-[500px] flex flex-col">
+            <div className="border-b p-4 bg-muted/50">
+              <div className="flex items-center">
+                <div className="flex space-x-2">
+                  <div className="h-3 w-3 rounded-full bg-red-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-green-500"></div>
+                </div>
+                <div className="mx-auto text-sm font-medium">
+                  Rune Visual IDE
+                </div>
+              </div>
+            </div>
+
+            <div className="flex-1 flex flex-col p-6 gap-4">
+              <div className="bg-card rounded-lg flex-1 border p-4 flex items-center justify-center">
+                <p className="font-medium text-center">
+                  1. Draw UI elements on the infinite canvas
+                </p>
+              </div>
+
+              <div className="bg-card rounded-lg flex-1 border p-4 flex items-center justify-center">
+                <p className="font-medium text-center">
+                  2. Drag node connections to add behavior
+                </p>
+              </div>
+
+              <div className="bg-primary/10 border-primary/30 rounded-lg flex-1 border p-4 flex items-center justify-center">
+                <p className="font-medium text-center">
+                  3. Press <Badge variant="default">Run</Badge> → live app
+                  appears instantly
+                </p>
+              </div>
+            </div>
+
+            <div className="border-t p-3 bg-muted/50 text-center text-sm text-muted-foreground">
+              [15-sec looping GIF would show this workflow]
             </div>
           </div>
         </div>
@@ -519,28 +526,28 @@ function Slide5() {
 
   return (
     <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="p-12 flex flex-col h-full">
-        <div>
-          <Badge
-            variant="secondary"
-            className="mb-2 text-xs font-medium uppercase tracking-wider"
-          >
-            Technology
-          </Badge>
-          <h1 className="text-4xl font-bold mb-3">
-            Under the Hood (Innovation Stack)
-          </h1>
+      <div className="p-12 flex flex-1 h-full">
+        <div className="w-1/2 flex flex-col pr-8">
+          <div>
+            <Badge
+              variant="secondary"
+              className="mb-2 text-xs font-medium uppercase tracking-wider"
+            >
+              Technology
+            </Badge>
+            <h1 className="text-4xl font-bold mb-3">
+              Under the Hood (Innovation Stack)
+            </h1>
 
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-1 w-12 bg-primary rounded-full"></div>
-            <h2 className="text-2xl font-semibold">
-              Proprietary stack built for visual + AI development.
-            </h2>
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-1 w-12 bg-primary rounded-full"></div>
+              <h2 className="text-2xl font-semibold">
+                Proprietary stack built for visual + AI development.
+              </h2>
+            </div>
           </div>
-        </div>
 
-        <div className="flex-1 flex gap-8">
-          <div className="w-2/3 grid grid-cols-1 gap-4">
+          <div className="flex-1 flex flex-col justify-center space-y-4">
             <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-5">
               <div className="flex items-start gap-4">
                 <div className="h-10 w-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center shrink-0 mt-1">
@@ -613,49 +620,58 @@ function Slide5() {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="w-1/3">
-            <div className="border rounded-lg p-5 bg-muted/30 h-full flex flex-col">
-              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <Badge variant="default">Rune</Badge> vs{" "}
-                <Badge variant="secondary">Cursor</Badge>
-              </h3>
+        <div className="w-1/2 h-full flex items-center justify-center">
+          <div className="border rounded-lg p-5 bg-muted/30 w-full h-[500px] flex flex-col">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <Badge variant="default">Rune</Badge> vs{" "}
+              <Badge variant="secondary">Cursor</Badge>
+            </h3>
 
-              <div className="flex-1 overflow-auto">
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className="w-[120px]">Feature</TableHead>
-                      <TableHead>
-                        <span className="flex items-center gap-1">
-                          <Badge variant="secondary" className="font-normal">
-                            Cursor
-                          </Badge>
-                        </span>
-                      </TableHead>
-                      <TableHead>
-                        <span className="flex items-center gap-1">
-                          <Badge variant="default" className="font-normal">
-                            Rune
-                          </Badge>
-                        </span>
-                      </TableHead>
+            <div className="flex-1 overflow-auto">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="w-[120px]">Feature</TableHead>
+                    <TableHead>
+                      <span className="flex items-center gap-1">
+                        <Badge variant="secondary" className="font-normal">
+                          Cursor
+                        </Badge>
+                      </span>
+                    </TableHead>
+                    <TableHead>
+                      <span className="flex items-center gap-1">
+                        <Badge variant="default" className="font-normal">
+                          Rune
+                        </Badge>
+                      </span>
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {compareData.map((row) => (
+                    <TableRow key={row.name}>
+                      <TableCell className="font-medium">{row.name}</TableCell>
+                      <TableCell>{row.cursor}</TableCell>
+                      <TableCell className="font-medium text-primary">
+                        {row.rune}
+                      </TableCell>
                     </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {compareData.map((row) => (
-                      <TableRow key={row.name}>
-                        <TableCell className="font-medium">
-                          {row.name}
-                        </TableCell>
-                        <TableCell>{row.cursor}</TableCell>
-                        <TableCell className="font-medium text-primary">
-                          {row.rune}
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
+                  ))}
+                </TableBody>
+              </Table>
+
+              <div className="mt-6 pt-6 border-t">
+                <div className="bg-primary/10 rounded-lg p-4 border border-primary/20">
+                  <h4 className="font-medium mb-2">Competitive Advantage</h4>
+                  <p>
+                    Rune combines the visual precision of design tools with the
+                    generative capabilities of AI coding assistants to create a
+                    unified product development environment.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -690,49 +706,38 @@ function Slide6() {
 
   return (
     <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="p-12 flex flex-col h-full">
-        <div>
-          <Badge
-            variant="secondary"
-            className="mb-2 text-xs font-medium uppercase tracking-wider"
-          >
-            Business
-          </Badge>
-          <h1 className="text-4xl font-bold mb-3">Market Opportunity</h1>
+      <div className="p-12 flex flex-1 h-full">
+        <div className="w-1/2 flex flex-col pr-8">
+          <div>
+            <Badge
+              variant="secondary"
+              className="mb-2 text-xs font-medium uppercase tracking-wider"
+            >
+              Business
+            </Badge>
+            <h1 className="text-4xl font-bold mb-3">Market Opportunity</h1>
 
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-1 w-12 bg-primary rounded-full"></div>
-            <h2 className="text-2xl font-semibold">
-              A $10B+ wedge where low-code meets Gen-AI dev tooling.
-            </h2>
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-1 w-12 bg-primary rounded-full"></div>
+              <h2 className="text-2xl font-semibold">
+                A $10B+ wedge where low-code meets Gen-AI dev tooling.
+              </h2>
+            </div>
           </div>
-        </div>
 
-        <div className="flex-1 flex gap-8 items-center">
-          <div className="w-1/2 flex flex-col">
-            <div className="border rounded-lg p-6 bg-muted/30 flex-1 flex items-center justify-center">
-              <ChartContainer config={chartConfig} className="w-full h-[300px]">
-                <PieChart>
-                  <Pie
-                    data={pieData}
-                    dataKey="value"
-                    nameKey="name"
-                    cx="50%"
-                    cy="50%"
-                    outerRadius={80}
-                    label
-                  >
-                    {pieData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.fill} />
-                    ))}
-                  </Pie>
-                  <ChartTooltip content={<ChartTooltipContent />} />
-                  <ChartLegend content={<ChartLegendContent />} />
-                </PieChart>
-              </ChartContainer>
+          <div className="flex-1 flex flex-col justify-center space-y-6">
+            <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
+              <h3 className="text-xl font-bold mb-3">
+                Opportunity at the intersection
+              </h3>
+              <p className="text-lg">
+                Early tools address dashboards or code snippets; Rune targets
+                full-fidelity consumer-grade products where budgets and pain are
+                largest.
+              </p>
             </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               <div className="border rounded-lg p-4 bg-blue-50 dark:bg-blue-950/30">
                 <div className="text-sm font-medium text-muted-foreground">
                   Low/No-code platforms
@@ -749,26 +754,13 @@ function Slide6() {
                 <div className="text-sm font-medium">→ $287B (2033)</div>
               </div>
             </div>
-          </div>
 
-          <div className="w-1/2 space-y-6">
-            <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
-              <h3 className="text-xl font-bold mb-3">
-                Opportunity at the intersection
-              </h3>
-              <p className="text-lg">
-                Early tools address dashboards or code snippets; Rune targets
-                full-fidelity consumer-grade products where budgets and pain are
-                largest.
-              </p>
-
-              <div className="mt-4 bg-card p-4 rounded-lg border">
-                <div className="flex items-center gap-2">
-                  <Badge variant="default">Key differentiator</Badge>
-                  <span className="text-muted-foreground">
-                    High-fidelity product UIs
-                  </span>
-                </div>
+            <div className="bg-card p-4 rounded-lg border">
+              <div className="flex items-center gap-2">
+                <Badge variant="default">Key differentiator</Badge>
+                <span className="text-muted-foreground">
+                  High-fidelity product UIs
+                </span>
               </div>
             </div>
 
@@ -776,6 +768,30 @@ function Slide6() {
               <span className="h-1 w-3 bg-muted-foreground rounded-full"></span>
               Sources: IDC 2024, CB Insights 2025
             </div>
+          </div>
+        </div>
+
+        <div className="w-1/2 h-full flex items-center justify-center">
+          <div className="border rounded-lg p-6 bg-muted/30 w-full h-[500px] flex items-center justify-center">
+            <ChartContainer config={chartConfig} className="w-full h-[400px]">
+              <PieChart>
+                <Pie
+                  data={pieData}
+                  dataKey="value"
+                  nameKey="name"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={120}
+                  label
+                >
+                  {pieData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={entry.fill} />
+                  ))}
+                </Pie>
+                <ChartTooltip content={<ChartTooltipContent />} />
+                <ChartLegend content={<ChartLegendContent />} />
+              </PieChart>
+            </ChartContainer>
           </div>
         </div>
       </div>
@@ -815,26 +831,26 @@ function Slide7() {
 
   return (
     <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="p-12 flex flex-col h-full">
-        <div>
-          <Badge
-            variant="secondary"
-            className="mb-2 text-xs font-medium uppercase tracking-wider"
-          >
-            Progress
-          </Badge>
-          <h1 className="text-4xl font-bold mb-3">Traction & Roadmap</h1>
+      <div className="p-12 flex flex-1 h-full">
+        <div className="w-1/2 flex flex-col pr-8">
+          <div>
+            <Badge
+              variant="secondary"
+              className="mb-2 text-xs font-medium uppercase tracking-wider"
+            >
+              Progress
+            </Badge>
+            <h1 className="text-4xl font-bold mb-3">Traction & Roadmap</h1>
 
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-1 w-12 bg-primary rounded-full"></div>
-            <h2 className="text-2xl font-semibold">
-              Building momentum with key design partners.
-            </h2>
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-1 w-12 bg-primary rounded-full"></div>
+              <h2 className="text-2xl font-semibold">
+                Building momentum with key design partners.
+              </h2>
+            </div>
           </div>
-        </div>
 
-        <div className="flex-1 grid grid-cols-2 gap-8">
-          <div className="space-y-6">
+          <div className="flex-1 flex flex-col justify-center space-y-6">
             <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
               <h3 className="text-xl font-bold mb-4">Current signals</h3>
 
@@ -887,54 +903,45 @@ function Slide7() {
               </ul>
             </div>
           </div>
+        </div>
 
-          <div className="space-y-6">
-            <div className="bg-muted/30 border rounded-lg p-6 h-full flex flex-col">
-              <h3 className="text-xl font-bold mb-4">12-Month roadmap</h3>
+        <div className="w-1/2 h-full flex items-center justify-center">
+          <div className="bg-muted/30 border rounded-lg p-6 w-full h-[500px] flex flex-col">
+            <h3 className="text-xl font-bold mb-4">12-Month roadmap</h3>
 
-              <div className="flex-1">
-                <ChartContainer
-                  config={chartConfig}
-                  className="w-full h-[180px]"
-                >
-                  <BarChart data={roadmapData}>
-                    <Bar
-                      dataKey="value"
-                      fill="var(--color-roadmap)"
-                      radius={[4, 4, 0, 0]}
-                    />
-                    <XAxis
-                      dataKey="quarter"
-                      tickLine={false}
-                      axisLine={false}
-                    />
-                  </BarChart>
-                </ChartContainer>
-              </div>
-
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead>Quarter</TableHead>
-                    <TableHead>Milestone</TableHead>
-                    <TableHead>KPI</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {roadmapData.map((row) => (
-                    <TableRow key={row.quarter}>
-                      <TableCell className="font-medium">
-                        {row.quarter}
-                      </TableCell>
-                      <TableCell>{row.milestone}</TableCell>
-                      <TableCell className="font-medium text-primary">
-                        {row.kpi}
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
+            <div className="flex-1">
+              <ChartContainer config={chartConfig} className="w-full h-[180px]">
+                <BarChart data={roadmapData}>
+                  <Bar
+                    dataKey="value"
+                    fill="var(--color-roadmap)"
+                    radius={[4, 4, 0, 0]}
+                  />
+                  <XAxis dataKey="quarter" tickLine={false} axisLine={false} />
+                </BarChart>
+              </ChartContainer>
             </div>
+
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Quarter</TableHead>
+                  <TableHead>Milestone</TableHead>
+                  <TableHead>KPI</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {roadmapData.map((row) => (
+                  <TableRow key={row.quarter}>
+                    <TableCell className="font-medium">{row.quarter}</TableCell>
+                    <TableCell>{row.milestone}</TableCell>
+                    <TableCell className="font-medium text-primary">
+                      {row.kpi}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </div>
         </div>
       </div>
@@ -946,28 +953,28 @@ function Slide7() {
 function Slide8() {
   return (
     <div className="h-full flex flex-col bg-gradient-to-br from-background to-background/70">
-      <div className="p-12 flex flex-col h-full">
-        <div>
-          <Badge
-            variant="secondary"
-            className="mb-2 text-xs font-medium uppercase tracking-wider"
-          >
-            Team & Next Steps
-          </Badge>
-          <h1 className="text-4xl font-bold mb-3">
-            Founder, Edge & Call-to-Action
-          </h1>
+      <div className="p-12 flex flex-1 h-full">
+        <div className="w-1/2 flex flex-col pr-8">
+          <div>
+            <Badge
+              variant="secondary"
+              className="mb-2 text-xs font-medium uppercase tracking-wider"
+            >
+              Team & Next Steps
+            </Badge>
+            <h1 className="text-4xl font-bold mb-3">
+              Founder, Edge & Call-to-Action
+            </h1>
 
-          <div className="flex items-center gap-2 mb-8">
-            <div className="h-1 w-12 bg-primary rounded-full"></div>
-            <h2 className="text-2xl font-semibold">
-              Join us in building the future of visual software development.
-            </h2>
+            <div className="flex items-center gap-2 mb-8">
+              <div className="h-1 w-12 bg-primary rounded-full"></div>
+              <h2 className="text-2xl font-semibold">
+                Join us in building the future of visual software development.
+              </h2>
+            </div>
           </div>
-        </div>
 
-        <div className="flex-1 grid grid-cols-2 gap-8">
-          <div className="space-y-6">
+          <div className="flex-1 flex flex-col justify-center space-y-6">
             <div className="bg-card rounded-lg border p-6">
               <div className="mb-3 flex gap-3 items-center">
                 <Badge variant="default">Founder</Badge>
@@ -1061,12 +1068,12 @@ function Slide8() {
               </ul>
             </div>
           </div>
+        </div>
 
-          <div className="flex flex-col gap-6">
-            <div className="bg-card rounded-lg border p-6">
-              <div className="mb-4">
-                <Badge variant="default">Looking for</Badge>
-              </div>
+        <div className="w-1/2 h-full flex items-center justify-center">
+          <div className="border rounded-lg w-full h-[500px] flex flex-col">
+            <div className="bg-primary/10 border-primary/20 rounded-t-lg border-b p-6">
+              <h3 className="text-xl font-bold mb-4">Looking for</h3>
 
               <div className="grid grid-cols-3 gap-4">
                 <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 flex flex-col items-center justify-center text-center">
@@ -1101,17 +1108,15 @@ function Slide8() {
               </div>
             </div>
 
-            <div className="flex-1 flex flex-col justify-end">
-              <div className="border-t pt-6 text-center">
-                <blockquote className="text-xl italic mb-6 px-8">
-                  "Rune unleashes a generation of builders who think visually
-                  and ship instantly."
-                </blockquote>
+            <div className="flex-1 flex flex-col justify-center p-8 text-center">
+              <blockquote className="text-xl italic mb-6 px-8">
+                "Rune unleashes a generation of builders who think visually and
+                ship instantly."
+              </blockquote>
 
-                <Button size="lg" variant="default" className="px-8">
-                  <strong>Reach out:</strong> hey@rune.design
-                </Button>
-              </div>
+              <Button size="lg" variant="default" className="px-8 mx-auto">
+                <strong>Reach out:</strong> brendan@playbackbone.com
+              </Button>
             </div>
           </div>
         </div>
