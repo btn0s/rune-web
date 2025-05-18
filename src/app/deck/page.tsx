@@ -165,8 +165,8 @@ function Slide1() {
       </div>
 
       <div className="bg-primary/10 p-3 text-sm flex justify-between border-t border-primary/10">
-        <span>brendan@playbackbone.com</span>
-        <span>rune.ai</span>
+        <span>hey@rune.design</span>
+        <span>rune.design</span>
         <span>Deck v May 2025</span>
       </div>
     </div>
@@ -1109,7 +1109,7 @@ function Slide8() {
                 </blockquote>
 
                 <Button size="lg" variant="default" className="px-8">
-                  <strong>Reach out:</strong> brendan@playbackbone.com
+                  <strong>Reach out:</strong> hey@rune.design
                 </Button>
               </div>
             </div>
