@@ -109,12 +109,18 @@ export default function Home() {
         eliminating handoffs and translation errors.
       </p>
 
+      <p>
+        <b>Oh, and we forgot to mention: Rune is fully extensible.</b> You have
+        complete code control to add new features, create custom nodes, and
+        shape the platform to fit your workflow. Rune is yours from day one.
+      </p>
+
       <h2>Why Rune?</h2>
       <p>
         For the Builders, Rune is a single, unified environment where design,
         logic, and code come together as a continuous, creative loop. For teams,
-        it’s a powerful way to eliminate handoffs, break down silos, and keep up
-        with a rapidly changing industry. Rune isn’t just a better tool—it’s a
+        it's a powerful way to eliminate handoffs, break down silos, and keep up
+        with a rapidly changing industry. Rune isn't just a better tool—it's a
         platform for building the future, empowering creators to work at the
         speed of thought.
       </p>
