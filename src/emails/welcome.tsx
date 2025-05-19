@@ -25,7 +25,7 @@ export const WelcomeEmail: React.FC<Readonly<WelcomeEmailProps>> = ({
       <Container style={container}>
         <div style={logo}>
           <Img
-            src="https://rune.design/logo.svg"
+            src="https://www.rune.design/logo.svg"
             width="24"
             height="24"
             alt="Rune Logo"
