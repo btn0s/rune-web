@@ -25,13 +25,12 @@ export async function POST(request: Request) {
     }
 
     // Send notification email to admin
-    const { data: notificationData, error: notificationError } =
-      await resend.emails.send({
-        from: "rune.design <waitlist@updates.rune.design>",
-        to: [ADMIN_EMAIL],
-        subject: `New Rune Beta Signup: ${email}`,
-        react: await NotificationEmail({ userEmail: email }),
-      });
+    const { error: notificationError } = await resend.emails.send({
+      from: "rune.design <waitlist@updates.rune.design>",
+      to: [ADMIN_EMAIL],
+      subject: `New Rune Beta Signup: ${email}`,
+      react: await NotificationEmail({ userEmail: email }),
+    });
 
     if (notificationError) {
       console.error("Failed to send notification email:", notificationError);
