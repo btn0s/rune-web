@@ -97,8 +97,8 @@ export default function Home() {
         </li>
         <li>
           <strong>Ship:</strong> Turn your designs into real, usable code in
-          moments. No more redoing work—your ideas become real products, ready
-          to use.
+          moments. No prompt engineering, no handoffs—your ideas become real
+          products, ready to use.
         </li>
       </ul>
 
