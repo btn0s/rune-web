@@ -38,9 +38,9 @@ export default function Home() {
         <div className="flex items-center gap-1 font-bold">
           <PiAsteriskBold /> Rune
         </div>
-        {/* <Button variant="outline" size="sm" asChild>
+        <Button variant="outline" size="sm" asChild>
           <Link href="#beta-signup">Join the private beta</Link>
-        </Button> */}
+        </Button>
       </div>
 
       <Image className="rounded-lg border shadow" src={demoImg} alt="Rune" />
@@ -119,10 +119,11 @@ export default function Home() {
         speed of thought.
       </p>
 
-      {/* <hr />
+      <hr />
+
       <div className="not-prose">
         <BetaSignup />
-      </div> */}
+      </div>
 
       <hr />
 

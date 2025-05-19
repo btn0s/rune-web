@@ -20,6 +20,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Email Setup
+
+This project uses [Resend](https://resend.com) and [React Email](https://react.email) for handling beta signup emails. To set it up:
+
+1. Create an account on [Resend](https://resend.com)
+2. Get your API key from the Resend dashboard
+3. Create a `.env.local` file in the root directory and add:
+   ```
+   RESEND_API_KEY=your_api_key_here
+   ```
+4. Make sure to add a verified domain in Resend dashboard
+5. Update the `from` email in `src/app/api/subscribe/route.ts` to use your domain
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
