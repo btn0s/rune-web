@@ -38,9 +38,9 @@ export default function Home() {
         <div className="flex items-center gap-1 font-bold">
           <PiAsteriskBold /> Rune
         </div>
-        <Button variant="outline" size="sm" asChild>
+        {/* <Button variant="outline" size="sm" asChild>
           <Link href="#beta-signup">Join the private beta</Link>
-        </Button>
+        </Button> */}
       </div>
 
       <Image className="rounded-lg border shadow" src={demoImg} alt="Rune" />
@@ -54,28 +54,36 @@ export default function Home() {
       </p>
 
       <p>
-        But this progress is still limited. Most AI tools rely on text chat
-        interfaces, trapping creators in endless loops of prompting and
+        <b>But this progress is still limited.</b> Most AI tools rely on text
+        chat interfaces, trapping creators in endless loops of prompting and
         correction, erasing context, and forcing a back-and-forth that feels
         more like "vibe coding" than real software development. This approach
         leaves out visual thinkers, reinforces silos, and wastes energy on
         managing instructions instead of building.
       </p>
 
-      <p className="font-semibold">
-        Rune is purpose-built for these teams of the future—a unified creative
-        platform where vision becomes reality.
+      <p>
+        <b>In order to break this ceiling,</b> we need tools that capture human
+        intent without relying on text chat prompts and code snippets. Tools
+        that can take all the creative artifacts of software design—mockups,
+        prototypes, logic flows, and interactions—and transform them into real,
+        production-ready software. Tools that allow creators to work in
+        expressive, visual environments without the friction of handoffs, where
+        ideas flow directly into execution without losing their creative intent.
       </p>
 
       <h2>Our Vision</h2>
 
-      <p>
+      <b className="text-sm">
         Rune reimagines software creation as a continuous, collaborative craft.
-        It draws inspiration from game engines like Unreal, where every element
-        is live, interactive, and interconnected and design tooling and code
-        live in one unified environment. It’s a platform that gives both solo
-        creators and teams the freedom to work without barriers, moving from
-        idea to execution in a single, seamless environment.
+      </b>
+
+      <p>
+        Drawing inspiration from game engines like Unreal, and combining that
+        with the power of AI to translate intent into code, Rune is a platform
+        that gives both solo creators and teams the freedom to work without
+        barriers, moving from idea to execution in a single, seamless
+        environment.
       </p>
 
       <ul>
