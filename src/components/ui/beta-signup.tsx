@@ -21,7 +21,7 @@ export function BetaSignup() {
     const hasSubmitted = localStorage.getItem(SIGNUP_KEY) === "true";
     const storedEmail = localStorage.getItem(EMAIL_KEY) || "";
 
-    if (hasSubmitted) {
+    if (hasSubmitted && process.env.NODE_ENV !== "development") {
       setIsSubmitted(true);
       setSavedEmail(storedEmail);
     }
