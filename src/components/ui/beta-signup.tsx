@@ -68,7 +68,7 @@ export function BetaSignup() {
   };
 
   return (
-    <Card className="p-4 flex flex-col gap-2" id="beta-signup">
+    <div className="flex flex-col gap-4" id="beta-signup">
       <div>
         <h3 className="text-lg font-semibold">Private Beta coming soon</h3>
         <p className="text-sm text-muted-foreground">
@@ -101,6 +101,6 @@ export function BetaSignup() {
           </Button>
         </form>
       )}
-    </Card>
+    </div>
   );
 }

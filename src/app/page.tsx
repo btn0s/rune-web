@@ -119,6 +119,8 @@ export default function Home() {
         speed of thought.
       </p>
 
+      <hr />
+
       <div className="not-prose">
         <BetaSignup />
       </div>
