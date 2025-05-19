@@ -46,8 +46,8 @@ export default function Home() {
       <Image className="rounded-lg border shadow" src={demoImg} alt="Rune" />
 
       <p>
-        AI has changed the way we build software. Coding has evolved into a more
-        human, intent-driven process, moving beyond raw syntax to capture
+        <b>AI has changed the way we build software.</b> Coding has evolved into
+        a more human, intent-driven process, moving beyond raw syntax to capture
         high-level ideas and creative intent. This shift has unlocked a new kind
         of Builder—someone who can sketch ideas, prototype interactions, and
         generate code without the friction of traditional handoffs.
