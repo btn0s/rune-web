@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: "Rune — A Better Way to Build Software",
   description:
     "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   openGraph: {
     title: "Rune — A Better Way to Build Software",
     description:
