@@ -4,6 +4,9 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { PiAsteriskBold } from "react-icons/pi";
 import demoImg from "@/assets/images/rune.png";
+import { BetaSignup } from "@/components/ui/beta-signup";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const DEFAULT_TRANSITION = {
   duration: 0.5,
@@ -31,29 +34,32 @@ export default function Home() {
       variants={DEFAULT_VARIANTS}
       transition={DEFAULT_TRANSITION}
     >
-      <div className="flex items-center gap-1 font-bold">
-        <PiAsteriskBold /> Rune
+      <div className="flex justify-between not-prose">
+        <div className="flex items-center gap-1 font-bold">
+          <PiAsteriskBold /> Rune
+        </div>
+        <Button variant="outline" size="sm" asChild>
+          <Link href="#beta-signup">Join the private beta</Link>
+        </Button>
       </div>
 
       <Image className="rounded-lg border shadow" src={demoImg} alt="Rune" />
 
       <p>
-        AI is reshaping software development. Boundaries between designers,
-        engineers, and product managers are dissolving, creating a new era where
-        roles blend and ideas thrive without constraints.
+        AI has changed the way we build software. Coding has evolved into a more
+        human, intent-driven process, moving beyond raw syntax to capture
+        high-level ideas and creative intent. This shift has unlocked a new kind
+        of Builder—someone who can sketch ideas, prototype interactions, and
+        generate code without the friction of traditional handoffs.
       </p>
 
       <p>
-        Product creation has long been fragmented—designers on visuals,
-        engineers on code, product managers on translation—stifling creativity
-        and slowing innovation.
-      </p>
-
-      <p>
-        Now, teams create together through a shared language. AI bridges design
-        and implementation, enabling true collaboration. Tomorrow's teams will
-        thrive on this creative unity, turning ideas into reality without
-        friction.
+        But this progress is still limited. Most AI tools rely on text chat
+        interfaces, trapping creators in endless loops of prompting and
+        correction, erasing context, and forcing a back-and-forth that feels
+        more like "vibe coding" than real software development. This approach
+        leaves out visual thinkers, reinforces silos, and wastes energy on
+        managing instructions instead of building.
       </p>
 
       <p className="font-semibold">
@@ -64,11 +70,12 @@ export default function Home() {
       <h2>Our Vision</h2>
 
       <p>
-        We're combining three powerful concepts into one revolutionary platform:
-        the visual precision of design tools, the node-based logic of visual
-        programming, and the generative capabilities of modern AI. This
-        technical foundation enables a new way of building that wasn't possible
-        before.
+        Rune reimagines software creation as a continuous, collaborative craft.
+        It draws inspiration from game engines like Unreal, where every element
+        is live, interactive, and interconnected and design tooling and code
+        live in one unified environment. It’s a platform that gives both solo
+        creators and teams the freedom to work without barriers, moving from
+        idea to execution in a single, seamless environment.
       </p>
 
       <ul>
@@ -94,27 +101,20 @@ export default function Home() {
         eliminating handoffs and translation errors.
       </p>
 
-      <h2>Why Now?</h2>
-      <ul>
-        <li>
-          <strong>Design and code are converging:</strong> Bleeding edge teams
-          are already working in unified, AI-powered environments—moving
-          seamlessly from idea to implementation. This way of working will soon
-          become the norm.
-        </li>
-        <li>
-          <strong>AI is extremely powerful—when guided well:</strong> Great
-          outputs require precise inputs, but today's AI tools are trapped
-          behind text interfaces that make it hard to express the complexity of
-          software.
-        </li>
-        <li>
-          <strong>Market pressure demands unprecedented speed:</strong>{" "}
-          Companies can no longer afford months-long development
-          cycles—successful teams need tools that collapse ideation, creation,
-          and shipping into days, not quarters.
-        </li>
-      </ul>
+      <h2>Why Rune?</h2>
+      <p>
+        For the Builders, Rune is a single, unified environment where design,
+        logic, and code come together as a continuous, creative loop. For teams,
+        it’s a powerful way to eliminate handoffs, break down silos, and keep up
+        with a rapidly changing industry. Rune isn’t just a better tool—it’s a
+        platform for building the future, empowering creators to work at the
+        speed of thought.
+      </p>
+
+      {/* <hr />
+      <div className="not-prose">
+        <BetaSignup />
+      </div> */}
 
       <hr />
 
