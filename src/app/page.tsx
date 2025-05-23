@@ -86,8 +86,7 @@ export default function Home() {
         <li>
           <strong>Design:</strong> Create beautiful interfaces, sketch
           interactions, and map logic flows on a unified canvas that merges
-          interface design with visual programming. Express your ideas with
-          complete creative freedom.
+          interface design with visual programming.
         </li>
         <li>
           <strong>Code:</strong> Access and edit the generated code directly. AI
