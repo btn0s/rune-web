@@ -10,6 +10,17 @@ export async function POST(request: Request) {
     const body = await request.json();
     const email = body.email || "john@example.com";
 
+    // Save user to audience bca98a58-3ec6-4cd2-b64d-cdfd272791da
+    const { data: contactData, error: contactError } =
+      await resend.contacts.create({
+        email: email,
+        audienceId: "bca98a58-3ec6-4cd2-b64d-cdfd272791da",
+      });
+
+    if (contactError) {
+      return Response.json({ error: contactError }, { status: 500 });
+    }
+
     // Send welcome email to the user
     const { data: welcomeData, error: welcomeError } = await resend.emails.send(
       {
