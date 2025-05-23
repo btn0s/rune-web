@@ -57,18 +57,11 @@ export default function Home() {
         correction. There's still a lot left to fix.
       </p>
 
-      <p>
-        <strong>What if there's a better way?</strong> What if this problem is
-        actually a symptom of something deeper—that product, engineering, and
-        design have never truly spoken the same language? What if there was a
-        way to capture your intent visually that everyone, including AI, could
-        understand perfectly? What if by solving this we unlocked something even
-        bigger?
+      <p className="font-bold">What if there's a better way?</p>
+
+      <p className="mt-1">
+        These problems are universal, and fundamentally about communication:
       </p>
-
-      <p className="font-bold">What we discovered</p>
-
-      <p>The problem is universal, and fundamentally about communication:</p>
 
       <ul>
         <li>Product and design think in user flows and visuals</li>
