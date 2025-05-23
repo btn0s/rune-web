@@ -105,15 +105,15 @@ export default function Home() {
       <p>
         <strong>Develop</strong>
         <br />
-        AI translates your visual designs into clean, extensible code that you
-        can extend.
+        Rune translates your visual designs into structured data that AI then
+        turns into clean, production-ready code.
       </p>
 
       <p>
         <strong>Deploy</strong>
         <br />
-        Ship to platforms like Vercel, Netlify, or AWS. Your visual creations
-        become live applications.
+        Ship to platforms like Vercel, Netlify, AWS, or your own infrastructure.
+        Your visual creations become live applications.
       </p>
 
       <h2>Who is Rune for?</h2>
