@@ -140,6 +140,28 @@ export default function Home() {
         pixels, logic flows, or code.
       </p>
 
+      <h2>The Future of Creative Software is Here</h2>
+
+      <p>
+        The boundaries between design and development are blurring. Rune
+        represents a unified creative environment where ideas flow directly from
+        concept to code to deployment—no translation layers, no context loss.
+      </p>
+
+      <p>
+        It's a different approach to creative collaboration. When everyone can
+        work in their preferred medium—visual design, logical flows, or
+        code—teams move faster and build better products.
+      </p>
+
+      <p>
+        <strong>We're building this with early adopters.</strong> Your feedback
+        and real-world use cases directly shape the platform. If you're
+        interested in this kind of workflow, we'd love to work with you.
+      </p>
+
+      <p>Ready to see what happens when your canvas becomes your codebase?</p>
+
       <hr />
 
       <div className="not-prose">
