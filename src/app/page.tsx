@@ -59,7 +59,7 @@ export default function Home() {
 
       <p className="font-bold">What if there's a better way?</p>
 
-      <p className="mt-1">
+      <p className="mt-0">
         These problems are universal, and fundamentally about communication:
       </p>
 
