@@ -16,13 +16,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rune — Design and build software visually",
+  title: "Rune — Visual Programming for the AI Era",
   description:
-    "Design on a canvas and make it real. Rune bridges the gap between creative expression and working software—powered by AI that understands your intent and generates production-ready code across any platform.",
+    "Transform creative ideas into working software on a visual canvas. Rune combines design tools like Figma with AI-powered code generation for seamless collaboration between designers, developers, and product teams.",
+  keywords: [
+    "visual programming",
+    "design to code",
+    "AI code generation",
+    "visual software development",
+    "design tools",
+    "low-code platform",
+    "cross-functional collaboration",
+    "design engineering",
+    "visual canvas",
+    "prototype to production",
+    "figma alternative",
+    "visual development environment",
+  ],
+  authors: [{ name: "Rune Team" }],
+  creator: "Rune",
+  publisher: "Rune",
+  category: "Technology",
+  classification: "Software Development Tools",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "Rune — Design and build software visually",
+    title: "Rune — Visual Programming for the AI Era",
     description:
-      "Design on a canvas and make it real. Rune bridges the gap between creative expression and working software—powered by AI that understands your intent and generates production-ready code across any platform.",
+      "Design on a canvas and ship real software. AI-powered visual development that bridges the gap between creative expression and production-ready code. Perfect for designers, developers, and cross-functional teams.",
     url: "https://rune.dev",
     siteName: "Rune",
     images: [
@@ -30,7 +60,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Rune - Design and build software visually",
+        alt: "Rune - Visual software development platform with AI-powered code generation",
       },
     ],
     locale: "en_US",
@@ -38,11 +68,25 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rune — Design and build software visually",
+    title: "Rune — Visual Programming for the AI Era",
     description:
-      "Design on a canvas and make it real. Rune bridges the gap between creative expression and working software—powered by AI that understands your intent and generates production-ready code across any platform.",
+      "Design on a canvas and ship real software. AI-powered visual development for seamless collaboration between designers and developers. Join the private beta.",
     images: ["/og.png"],
     creator: "@btn0s",
+    site: "@rune_design",
+  },
+  alternates: {
+    canonical: "https://rune.dev",
+  },
+  other: {
+    "application-name": "Rune",
+    "apple-mobile-web-app-title": "Rune",
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "default",
+    "format-detection": "telephone=no",
+    "mobile-web-app-capable": "yes",
+    "msapplication-TileColor": "#000000",
+    "theme-color": "#000000",
   },
 };
 

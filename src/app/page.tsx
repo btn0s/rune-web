@@ -68,44 +68,53 @@ export default function Home() {
 
       <p>
         Inspired by design tools like Figma and game engines like Unreal, Rune
-        replaces lossy text conversations with a visual language that everyone
-        understands. Instead of endless prompting loops, you work directly on a
-        canvas where design and development happen together—everything you
-        create becomes real software, powered by AI that understands your intent
-        and generates production-ready code for any platform.
+        transforms how creative teams work together. Instead of losing ideas and
+        context in endless text prompts and translation gaps, you work directly
+        on a visual canvas where design and development unite seamlessly.
       </p>
+
+      <p>
+        Every element you create becomes real, working software. Backed by the
+        power of AI, Rune understands your intent and generates production-ready
+        code for any platform, eliminating the friction between imagination and
+        implementation.
+      </p>
+
+      <h3>Design, Code, Ship—All in One Flow</h3>
 
       <ul>
         <li>
-          <strong>Express:</strong> Design your vision on an infinite canvas.
-          Create interfaces, sketch interactions, and visualize data flows with
+          <strong>Design:</strong> Create beautiful interfaces, sketch
+          interactions, and map logic flows on a unified canvas that merges
+          interface design with visual programming. Express your ideas with
           complete creative freedom.
         </li>
         <li>
-          <strong>Connect:</strong> Add logic and behavior through visual flows.
-          Connect your designs to real data, APIs, and services.
+          <strong>Code:</strong> Access and edit the generated code directly. AI
+          translates your visual designs into structured specifications,
+          producing clean, customizable code that you can extend and refine.
         </li>
         <li>
-          <strong>Deploy:</strong> Your creative vision becomes real software
-          running on any platform. No handoffs, no translation—just working
-          applications.
+          <strong>Ship:</strong> Deploy instantly to any platform. Whether it's
+          Vercel, Netlify, AWS, or your preferred service, your visual creations
+          become live applications with a single click.
         </li>
       </ul>
 
       <p>
-        Work with the fluidity and precision of professional design tools while
-        AI interprets your designs as rich, structured specifications and
-        generates code automatically. From simple prototypes to complex
-        enterprise software, Rune scales with your ambitions and adapts to your
-        workflow.
+        Experience the fluidity of professional design tools combined with the
+        power of intelligent code generation. Rune scales from rapid prototypes
+        to enterprise applications, adapting to your workflow and growing with
+        your ambitions.
       </p>
 
-      <p className="font-bold">Did we mention Rune is fully customizable?</p>
+      <h3>Built for Customization</h3>
 
       <p>
-        Create custom nodes, build your own compilers, integrate with any
-        service. Rune gives you full source code so you can adapt it to your
-        workflow, not the other way around.
+        Rune doesn't lock you in—it opens up. Create custom nodes, build
+        specialized compilers, and integrate with any service you need. With
+        full source code access, you shape Rune to fit your workflow, not the
+        other way around.
       </p>
 
       <h2>Who is Rune for?</h2>
@@ -140,9 +149,7 @@ export default function Home() {
 
       <hr />
 
-      <p className="font-semibold">
-        Rune – Design and build software visually.
-      </p>
+      <p className="font-semibold">Rune – Visual programming for the AI Era.</p>
     </motion.div>
   );
 }
