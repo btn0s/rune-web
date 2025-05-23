@@ -127,8 +127,6 @@ export default function Horizon1Client() {
         </div>
       </div>
 
-      <hr />
-
       <div className="not-prose">
         <BetaSignup />
       </div>
