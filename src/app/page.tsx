@@ -33,9 +33,9 @@ export default function Home() {
       variants={DEFAULT_VARIANTS}
       transition={DEFAULT_TRANSITION}
     >
-      <div className="flex justify-between not-prose">
+      <div className="flex justify-between not-prose mb-12">
         <div className="flex items-center gap-2 font-bold">
-          <Image src={logo} alt="Rune" width={24} height={24} /> Rune
+          <Image src={logo} alt="Rune" width={24} height={24} /> rune.design
         </div>
         <Button variant="outline" size="sm" asChild>
           <Link href="#beta-signup">Join the private beta</Link>
@@ -60,19 +60,19 @@ export default function Home() {
 
       <p>
         <b>What if there was a better way?</b> What if every creative decision
-        every creative decision became working software? What if everyone could
-        speak the same language? What if you could design on a canvas and make
-        it real?
+        became working software? What if everyone could speak the same language?
+        What if you could design on a canvas and make it real?
       </p>
 
       <h2>Rune is that canvas.</h2>
 
       <p>
         Inspired by design tools like Figma and game engines like Unreal, Rune
-        is a universal language for software creation. Design with complete
-        creative freedom—everything you create becomes real software, powered by
-        AI that understands your intent and generates production-ready code for
-        any platform.
+        replaces lossy text conversations with a visual language that everyone
+        understands. Instead of endless prompting loops, you work directly on a
+        canvas where design and development happen together—everything you
+        create becomes real software, powered by AI that understands your intent
+        and generates production-ready code for any platform.
       </p>
 
       <ul>
@@ -100,31 +100,36 @@ export default function Home() {
         workflow.
       </p>
 
+      <p className="font-bold">Did we mention Rune is fully customizable?</p>
+
+      <p>
+        Create custom nodes, build your own compilers, integrate with any
+        service. Rune gives you full source code so you can adapt it to your
+        workflow, not the other way around.
+      </p>
+
       <h2>Who is Rune for?</h2>
 
       <p>
-        <strong>Cross-functional teams.</strong> Designers and developers
-        finally speak the same language. Changes happen in real-time on the same
-        canvas. No more lost context or broken designs.
+        <strong>Product people and designers.</strong> Move beyond text-based AI
+        tools and work visually. Your PRDs and designs become real code
+        prototypes that your engineers can build on directly. No more lost
+        context in translation.
       </p>
 
       <p>
-        <strong>Creative polyglots.</strong> Whether you think in pixels or
-        code, Rune speaks your language. Edit the design, get updated code. Add
-        functionality in code, see it in the editor. Everyone works with the
-        same source of truth.
+        <strong>Developers and design engineers.</strong> Finally have a true
+        home for cross-functional work. Code and design stay in sync
+        automatically—edit the design, get updated code. Add functionality in
+        code, see it in the editor. Everyone works with the same source of
+        truth.
       </p>
 
       <p>
-        <strong>Ambitious builders.</strong> Design once, ship everywhere. Keep
-        creative control—your designs become the source of truth for your
-        software. Every pixel, every interaction works exactly as intended.
-      </p>
-
-      <p>
-        <b>Built for extensibility.</b> Create custom nodes, build your own
-        compilers, integrate with any service. Rune adapts to you, not the other
-        way around.
+        <strong>Cross-functional teams.</strong> Break down silos between
+        disciplines. Changes happen in real-time on the same canvas where
+        everyone can contribute in their preferred way—whether you think in
+        pixels, logic flows, or code.
       </p>
 
       <hr />
