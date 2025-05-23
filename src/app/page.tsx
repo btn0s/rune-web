@@ -51,102 +51,86 @@ export default function Home() {
       </p>
 
       <p>
-        <b>Creativity remains constrained.</b> AI tools force everyone—humans
-        and AI alike—into lossy text chats resulting in endless loops of
-        prompting and correction. Teams still struggle to communicate across
-        disciplines. Design engineers and polyglots who work cross-functionally
-        lack a real home that supports their multilingual workflow. Existing
-        tools simply aren't built for modern teams or the structured
-        communication that AI needs to excel.
+        <b>Creativity remains constrained.</b> AI tools force everyone into
+        lossy text chats, creating endless loops of prompting and correction.
+        This happens because existing tools simply aren't built for the
+        structured communication that AI needs to excel—leaving teams frustrated
+        and AI underutilized.
       </p>
 
       <p>
         <b>What if there was a better way?</b> What if there was a way to
         capture your intent visually? What if every creative decision became
-        working software? What if you could design on a canvas that lets
-        everyone—including AI—speak the same language?
+        working software? What if you could design on a canvas that lets your
+        whole team—product, design, engineering, and even AI—speak a universal
+        language?
       </p>
 
       <h2>Rune is that canvas.</h2>
 
       <p>
         Inspired by design tools like Figma and game engines like Unreal, Rune
-        transforms how creative teams work together. Instead of losing ideas and
-        context in endless text prompts and translation gaps, you work directly
-        on a visual canvas where design and development unite seamlessly—and
-        where AI receives structured, unambiguous specifications instead of
-        ambiguous prompts.
+        transforms how creative teams work together. Work directly on a visual
+        canvas where design and development unite seamlessly—and where AI
+        receives structured specifications instead of ambiguous prompts.
       </p>
 
       <p>
-        Every element you create becomes real, working software and structured
-        data. Backed by the power of AI that finally understands your visual
-        intent precisely, Rune generates production-ready code for any platform,
-        eliminating the friction between imagination and implementation.
+        Every element becomes real, working software. AI understands your visual
+        intent precisely and generates clean, extensible code that you can
+        deploy to modern platforms.
       </p>
 
-      <h3>Design, Code, Ship—All in One Flow</h3>
+      <h3>One Canvas, Three Ways to Work</h3>
 
       <ul>
         <li>
-          <strong>Design:</strong> Create beautiful interfaces, sketch
-          interactions, and map logic flows on a unified canvas that merges
-          interface design with visual programming.
+          <strong>Design:</strong> Create interfaces and map logic flows on a
+          unified canvas that merges visual design with programming.
         </li>
         <li>
           <strong>Code:</strong> Access and edit the generated code directly. AI
-          translates your visual designs into structured specifications and
-          produces clean code that you can extend and refine.
+          translates your visual designs into clean code that you can extend.
         </li>
         <li>
-          <strong>Ship:</strong> Deploy instantly to any platform. Whether it's
-          Vercel, Netlify, AWS, or your preferred service, your visual creations
-          become live applications with a single click.
+          <strong>Ship:</strong> Deploy to platforms like Vercel, Netlify, or
+          AWS. Your visual creations become live applications.
         </li>
       </ul>
 
       <p>
-        Experience the fluidity of professional design tools combined with the
-        power of intelligent code generation. Rune scales from rapid prototypes
-        to enterprise applications, adapting to your workflow and growing with
-        your ambitions.
+        Experience the fluidity of professional design tools combined with
+        intelligent code generation. Rune scales from rapid prototypes to
+        production applications.
       </p>
 
       <h3>Built for Customization</h3>
 
       <p>
-        Oh, and Rune doesn't lock you in—it opens up. Create custom nodes, build
-        specialized compilers, and integrate with any service you need. With
-        full source code access, you shape Rune to fit your workflow, not the
-        other way around.
+        Rune doesn't lock you in—it opens up. Create custom nodes, integrate
+        with any service, and access the full source code. Shape Rune to fit
+        your workflow.
       </p>
 
       <h2>Who is Rune for?</h2>
 
-      <p>
-        <strong>Product people and designers.</strong> Move beyond text-based AI
-        tools and work visually with AI as your creative partner. Your PRDs and
-        designs become structured specifications that both your engineering team
-        and AI understand perfectly. No more lost context in translation.
+      <p className="font-bold">Modern product teams</p>
+      <p className="mt-2">
+        Work visually with AI as your creative partner. Your designs become
+        structured specifications and real, working software that everyone
+        understands perfectly.
       </p>
 
-      <p>
-        <strong>Design engineers and polyglots.</strong> Finally have a true
-        home for multilingual, cross-functional work. Think in pixels, logic
-        flows, and code simultaneously while AI receives the structured data it
-        needs to generate clean, extensible code. Code and design stay in sync
-        automatically—edit the design, get updated code. Add functionality in
-        code, see it in the editor. Everyone works with the same source of
-        truth.
+      <p className="font-bold mt-6">Design engineers and polyglots</p>
+      <p className="mt-2">
+        Think in pixels, logic flows, and code simultaneously. Make your home in
+        Rune and extend the platform to match your workflow.
       </p>
 
-      <p>
-        <strong>Cross-functional teams.</strong> Break down silos between
-        disciplines and include AI as an effective team member. Changes happen
-        in real-time on the same canvas where everyone can contribute in their
-        preferred way—whether you think in pixels, logic flows, or code—while AI
-        works with precise, visual specifications instead of ambiguous text
-        prompts.
+      <p className="font-bold mt-6">Solopreneurs</p>
+      <p className="mt-2">
+        Work end-to-end on your product. Transform your ideas from expressive
+        canvas directly into production-ready applications.
       </p>
 
       <h2>The Future of Creative Software is Here</h2>
