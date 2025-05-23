@@ -176,13 +176,13 @@ export default function Home() {
 
       <p>Ready to see what happens when your canvas becomes your codebase?</p>
 
-      <hr />
+      <hr className="mb-6" />
 
       <div className="not-prose">
         <BetaSignup />
       </div>
 
-      <hr />
+      <hr className="mt-6" />
 
       <p className="font-semibold">
         Rune – The unified creative development platform
