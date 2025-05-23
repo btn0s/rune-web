@@ -90,8 +90,8 @@ export default function Home() {
         </li>
         <li>
           <strong>Code:</strong> Access and edit the generated code directly. AI
-          translates your visual designs into structured specifications,
-          producing clean, customizable code that you can extend and refine.
+          translates your visual designs into structured specifications and
+          produces clean code that you can extend and refine.
         </li>
         <li>
           <strong>Ship:</strong> Deploy instantly to any platform. Whether it's
