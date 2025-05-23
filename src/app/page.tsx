@@ -178,7 +178,7 @@ export default function Home() {
       <hr />
 
       <p className="font-semibold">
-        Rune – The unified creative development platform
+        Rune – The creative platform for modern software
       </p>
     </motion.div>
   );

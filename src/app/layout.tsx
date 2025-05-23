@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rune — The unified creative development platform",
+  title: "Rune — The creative platform for modern software",
   description:
     "A visual canvas where product, design, and engineering teams speak the same language. Create interfaces and logic flows that become structured data both humans and AI understand perfectly. From concept to deployment, visually.",
   keywords: [
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rune — The unified creative development platform",
+    title: "Rune — The creative platform for modern software",
     description:
       "Work on a visual canvas where every element becomes structured data that both humans and AI understand perfectly. Your designs become specifications, your logic flows become executable code. Eliminate translation gaps between disciplines.",
     url: "https://rune.dev",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rune — The unified creative development platform",
+    title: "Rune — The creative platform for modern software",
     description:
       "The visual language teams and AI understand. Create on a canvas where your designs become code and your ideas flow directly from concept to deployment. Join the private beta.",
     images: ["/og.png"],
