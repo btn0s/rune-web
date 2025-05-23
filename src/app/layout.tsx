@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rune — Visual Programming for the AI Era",
+  title: "Rune — The unified creative development platform",
   description:
-    "Transform creative ideas into working software on a visual canvas. Rune combines design tools like Figma with AI-powered code generation for seamless collaboration between designers, developers, and product teams.",
+    "A visual canvas where product, design, and engineering teams speak the same language. Create interfaces and logic flows that become structured data both humans and AI understand perfectly. From concept to deployment, visually.",
   keywords: [
     "visual programming",
     "design to code",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rune — Visual Programming for the AI Era",
+    title: "Rune — The unified creative development platform",
     description:
-      "Design on a canvas and ship real software. AI-powered visual development that bridges the gap between creative expression and production-ready code. Perfect for designers, developers, and cross-functional teams.",
+      "Work on a visual canvas where every element becomes structured data that both humans and AI understand perfectly. Your designs become specifications, your logic flows become executable code. Eliminate translation gaps between disciplines.",
     url: "https://rune.dev",
     siteName: "Rune",
     images: [
@@ -68,9 +68,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rune — Visual Programming for the AI Era",
+    title: "Rune — The unified creative development platform",
     description:
-      "Design on a canvas and ship real software. AI-powered visual development for seamless collaboration between designers and developers. Join the private beta.",
+      "The visual language teams and AI understand. Create on a canvas where your designs become code and your ideas flow directly from concept to deployment. Join the private beta.",
     images: ["/og.png"],
     creator: "@btn0s",
     site: "@rune_design",
