@@ -152,9 +152,13 @@ export default function Home() {
       <p>
         We started by asking: "How do we communicate better with AI?" But we
         ended up answering a bigger question: "How do creative teams communicate
-        better, period?" We found out that when everyone—including AI—can speak
-        their native language without having to worry about translation and
-        handoff, teams move faster and build better products.
+        better, period?"
+      </p>
+
+      <p>
+        We found out that when everyone—including AI—can speak their native
+        language without having to worry about translation and handoff, teams
+        move faster and build better products.
       </p>
 
       <p>
