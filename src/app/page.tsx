@@ -2,11 +2,10 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import { PiAsteriskBold } from "react-icons/pi";
-import demoImg from "@/assets/images/rune.png";
 import { BetaSignup } from "@/components/ui/beta-signup";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import logo from "../../public/logo.svg";
 
 const DEFAULT_TRANSITION = {
   duration: 0.5,
@@ -35,15 +34,13 @@ export default function Home() {
       transition={DEFAULT_TRANSITION}
     >
       <div className="flex justify-between not-prose">
-        <div className="flex items-center gap-1 font-bold">
-          <PiAsteriskBold /> Rune
+        <div className="flex items-center gap-2 font-bold">
+          <Image src={logo} alt="Rune" width={24} height={24} /> Rune
         </div>
         <Button variant="outline" size="sm" asChild>
           <Link href="#beta-signup">Join the private beta</Link>
         </Button>
       </div>
-
-      <Image className="rounded-lg border shadow" src={demoImg} alt="Rune" />
 
       <p>
         <b>AI has changed the way we build software.</b> Coding has evolved into
@@ -54,7 +51,7 @@ export default function Home() {
       </p>
 
       <p>
-        <b>But this progress is still limited.</b> Most AI tools rely on text
+        <b>But creativity is still constrained.</b> Most AI tools rely on text
         chat interfaces, trapping creators in endless loops of prompting and
         correction, erasing context, and forcing a back-and-forth that feels
         more like "vibe coding" than real software development. This approach
@@ -63,66 +60,72 @@ export default function Home() {
       </p>
 
       <p>
-        <b>In order to break this ceiling,</b> we need tools that capture human
-        intent without relying on text chat prompts and code snippets. Tools
-        that can take all the creative artifacts of software design—mockups,
-        prototypes, logic flows, and interactions—and transform them into real,
-        production-ready software. Tools that allow creators to work in
-        expressive, visual environments without the friction of handoffs, where
-        ideas flow directly into execution without losing their creative intent.
+        Design tools let you create beautiful interfaces, but they remain static
+        pictures. Code is incredibly creative and powerful, but lives in a
+        separate world from design—requiring constant translation between visual
+        ideas and implementation.
       </p>
 
-      <h2>Our Vision</h2>
+      <p>
+        <b>What if you could design on a canvas and make it real?</b> What if
+        every creative decision became working software?
+      </p>
 
-      <b className="text-sm">
-        Rune reimagines software creation as a continuous, collaborative craft.
-      </b>
+      <h2>Rune is that canvas.</h2>
 
       <p>
-        Drawing inspiration from game engines like Unreal, and combining that
-        with the power of AI to translate intent into code, Rune is a platform
-        that gives both solo creators and teams the freedom to work without
-        barriers, moving from idea to execution in a single, seamless
-        environment.
+        Drawing inspiration from popular design tools like Figma and powerful
+        game engines like Unreal, Rune reimagines software creation as a
+        continuous, collaborative craft. Design with creative freedom, and
+        everything you create becomes real software—powered by AI that
+        understands your intent and generates production-ready code across any
+        platform.
       </p>
 
       <ul>
         <li>
-          <strong>Design:</strong> Express your ideas on an infinite canvas with
-          familiar tools. Create beautiful, precise experiences.
+          <strong>Express:</strong> Design your vision on an infinite canvas.
+          Create interfaces, sketch interactions, visualize data flows with
+          complete creative freedom.
         </li>
         <li>
-          <strong>Build:</strong> Add logic and interactivity directly to your
-          designs. Every change makes real, working software—not just a mockup.
+          <strong>Connect:</strong> Add logic and behavior through visual flows.
+          Connect your designs to real data, APIs, and services.
         </li>
         <li>
-          <strong>Ship:</strong> Turn your designs into real, usable code in
-          moments. No prompt engineering, no handoffs—your ideas become real
-          products, ready to use.
+          <strong>Deploy:</strong> Your creative vision becomes real software,
+          running on any platform. No handoffs, no translation—just working
+          applications.
         </li>
       </ul>
 
       <p>
-        Together, these capabilities create a seamless journey from idea to
-        implementation. The entire process is powered by cutting-edge AI that
-        translates visual intentions directly into production-ready software,
-        eliminating handoffs and translation errors.
+        This bridges the gap between creative expression and working software.
+        Work on a canvas with the fluidity and precision of professional design
+        tools, while AI interprets your designs as rich, structured
+        specifications and generates code automatically.
       </p>
 
       <p>
-        <b>Oh, and we forgot to mention: Rune is fully extensible.</b> You have
-        complete code control to add new features, create custom nodes, and
-        shape the platform to fit your workflow. Rune is yours from day one.
+        Whether you're prototyping a simple app or building complex enterprise
+        software, Rune scales with your ambitions. And because Rune is{" "}
+        <b>fully extensible from day one</b>, you have complete control to add
+        new features, create custom nodes, and shape the platform to fit your
+        workflow. Build your own compilers, extend the behavior graph, integrate
+        with any service—Rune adapts to you, not the other way around.
       </p>
 
       <h2>Why Rune?</h2>
+      <p>Ship faster. Design once, ship everywhere.</p>
+
       <p>
-        For the Builders, Rune is a single, unified environment where design,
-        logic, and code come together as a continuous, creative loop. For teams,
-        it's a powerful way to eliminate handoffs, break down silos, and keep up
-        with a rapidly changing industry. Rune isn't just a better tool—it's a
-        platform for building the future, empowering creators to work at the
-        speed of thought.
+        Skip the handoffs. Designers and developers work on the same canvas.
+        Changes happen in real-time. No more lost context or broken designs.
+      </p>
+
+      <p>
+        Keep creative control. Your designs become the source of truth for your
+        software. Every pixel, every interaction works exactly as you intended.
       </p>
 
       <hr />
@@ -133,7 +136,9 @@ export default function Home() {
 
       <hr />
 
-      <p className="font-semibold">Rune – A better way to build software.</p>
+      <p className="font-semibold">
+        Rune – Design and build software visually.
+      </p>
     </motion.div>
   );
 }

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/sonner";
@@ -16,14 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rune — A Better Way to Build Software",
+  title: "Rune — Design and build software visually",
   description:
-    "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+    "Design on a canvas and make it real. Rune bridges the gap between creative expression and working software—powered by AI that understands your intent and generates production-ready code across any platform.",
   openGraph: {
-    title: "Rune — A Better Way to Build Software",
+    title: "Rune — Design and build software visually",
     description:
-      "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
+      "Design on a canvas and make it real. Rune bridges the gap between creative expression and working software—powered by AI that understands your intent and generates production-ready code across any platform.",
     url: "https://rune.dev",
     siteName: "Rune",
     images: [
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Rune - A Better Way to Build Software",
+        alt: "Rune - Design and build software visually",
       },
     ],
     locale: "en_US",
@@ -39,12 +38,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rune — A Better Way to Build Software",
+    title: "Rune — Design and build software visually",
     description:
-      "A single canvas where design, engineering, and product teams collaborate in the same language—no handoffs, just continuous creation where every change is instantly real.",
+      "Design on a canvas and make it real. Rune bridges the gap between creative expression and working software—powered by AI that understands your intent and generates production-ready code across any platform.",
     images: ["/og.png"],
     creator: "@btn0s",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({
