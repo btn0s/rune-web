@@ -43,25 +43,28 @@ export default function Home() {
       </div>
 
       <p>
-        <b>AI has changed how we build software.</b> Product people are using AI
-        to write PRDs, designers for imagegen and inspiration--even coding has
-        evolved from raw syntax into a more human, intent-driven process that
-        captures high-level ideas and creative intent.
+        <b>AI has changed how we build software.</b> Product people collaborate
+        with AI to write PRDs, designers use it for inspiration and iteration,
+        developers pair-program with AI daily. AI has become the newest member
+        of every creative team—but like any team member, it's only as effective
+        as the communication it receives.
       </p>
 
       <p>
-        <b>But creativity remains constrained.</b> AI tools force everyone into
-        lossy text chats resulting in endless loops of prompting and correction.
-        Teams still struggle to communicate across disciplines, and even design
-        engineers and those who work cross-functionally lack a real home that
-        supports their workflow. Existing tools simply aren't built for
-        cross-functional teams or multilingual individuals.
+        <b>Creativity remains constrained.</b> AI tools force everyone—humans
+        and AI alike—into lossy text chats resulting in endless loops of
+        prompting and correction. Teams still struggle to communicate across
+        disciplines. Design engineers and polyglots who work cross-functionally
+        lack a real home that supports their multilingual workflow. Existing
+        tools simply aren't built for modern teams or the structured
+        communication that AI needs to excel.
       </p>
 
       <p>
-        <b>What if there was a better way?</b> What if every creative decision
-        became working software? What if everyone could speak the same language?
-        What if you could design on a canvas and make it real?
+        <b>What if there was a better way?</b> What if there was a way to
+        capture your intent visually? What if every creative decision became
+        working software? What if you could design on a canvas that lets
+        everyone—including AI—speak the same language?
       </p>
 
       <h2>Rune is that canvas.</h2>
@@ -70,14 +73,16 @@ export default function Home() {
         Inspired by design tools like Figma and game engines like Unreal, Rune
         transforms how creative teams work together. Instead of losing ideas and
         context in endless text prompts and translation gaps, you work directly
-        on a visual canvas where design and development unite seamlessly.
+        on a visual canvas where design and development unite seamlessly—and
+        where AI receives structured, unambiguous specifications instead of
+        ambiguous prompts.
       </p>
 
       <p>
-        Every element you create becomes real, working software. Backed by the
-        power of AI, Rune understands your intent and generates production-ready
-        code for any platform, eliminating the friction between imagination and
-        implementation.
+        Every element you create becomes real, working software and structured
+        data. Backed by the power of AI that finally understands your visual
+        intent precisely, Rune generates production-ready code for any platform,
+        eliminating the friction between imagination and implementation.
       </p>
 
       <h3>Design, Code, Ship—All in One Flow</h3>
@@ -110,7 +115,7 @@ export default function Home() {
       <h3>Built for Customization</h3>
 
       <p>
-        Rune doesn't lock you in—it opens up. Create custom nodes, build
+        Oh, and Rune doesn't lock you in—it opens up. Create custom nodes, build
         specialized compilers, and integrate with any service you need. With
         full source code access, you shape Rune to fit your workflow, not the
         other way around.
@@ -120,14 +125,16 @@ export default function Home() {
 
       <p>
         <strong>Product people and designers.</strong> Move beyond text-based AI
-        tools and work visually. Your PRDs and designs become real code
-        prototypes that your engineers can build on directly. No more lost
-        context in translation.
+        tools and work visually with AI as your creative partner. Your PRDs and
+        designs become structured specifications that both your engineering team
+        and AI understand perfectly. No more lost context in translation.
       </p>
 
       <p>
-        <strong>Developers and design engineers.</strong> Finally have a true
-        home for cross-functional work. Code and design stay in sync
+        <strong>Design engineers and polyglots.</strong> Finally have a true
+        home for multilingual, cross-functional work. Think in pixels, logic
+        flows, and code simultaneously while AI receives the structured data it
+        needs to generate clean, extensible code. Code and design stay in sync
         automatically—edit the design, get updated code. Add functionality in
         code, see it in the editor. Everyone works with the same source of
         truth.
@@ -135,9 +142,11 @@ export default function Home() {
 
       <p>
         <strong>Cross-functional teams.</strong> Break down silos between
-        disciplines. Changes happen in real-time on the same canvas where
-        everyone can contribute in their preferred way—whether you think in
-        pixels, logic flows, or code.
+        disciplines and include AI as an effective team member. Changes happen
+        in real-time on the same canvas where everyone can contribute in their
+        preferred way—whether you think in pixels, logic flows, or code—while AI
+        works with precise, visual specifications instead of ambiguous text
+        prompts.
       </p>
 
       <h2>The Future of Creative Software is Here</h2>
@@ -151,7 +160,8 @@ export default function Home() {
       <p>
         It's a different approach to creative collaboration. When everyone can
         work in their preferred medium—visual design, logical flows, or
-        code—teams move faster and build better products.
+        code—teams move faster and build better products--and your new AI team
+        mates can do what they do best.
       </p>
 
       <p>
