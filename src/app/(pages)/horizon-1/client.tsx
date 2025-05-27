@@ -87,7 +87,7 @@ export default function Horizon1Client() {
               <Palette className="size-4" />
             </div>
             <div>
-              <h4 className="font-semibold text-lg m-0">Figma Import</h4>
+              <h4 className="font-semibold text-lg m-0">Pull from Figma</h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
                 Import designs as structured data that preserves your design
                 decisions—creating a foundation for AI to understand not just
@@ -101,7 +101,9 @@ export default function Horizon1Client() {
               <Zap className="size-4" />
             </div>
             <div>
-              <h4 className="font-semibold text-lg m-0">Visual Programming</h4>
+              <h4 className="font-semibold text-lg m-0">
+                Add Rich Interactions and Data
+              </h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
                 Express complex behaviors through an intuitive visual
                 language—bridging human creativity and machine understanding.
@@ -114,26 +116,13 @@ export default function Horizon1Client() {
               <Rocket className="size-4" />
             </div>
             <div>
-              <h4 className="font-semibold text-lg m-0">Real prototypes</h4>
+              <h4 className="font-semibold text-lg m-0">
+                Get prototypes that feel real
+              </h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
                 Run actual prototypes in a live environment—think Origami Studio
                 meets Unreal Engine. Export as AI-ready specs that capture every
                 nuance.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <div className="size-6 shrink-0 bg-orange-50 text-orange-500 rounded-lg flex items-center justify-center font-bold">
-              <Code className="size-4" />
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg m-0">
-                Free and Open Source
-              </h4>
-              <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
-                Fully open-source and extensible—because creative tools should
-                be shaped by the community that uses them.
               </p>
             </div>
           </div>
@@ -145,6 +134,12 @@ export default function Horizon1Client() {
         visual thinking and technical implementation naturally converge, where
         your creative intent is preserved and amplified through every stage of
         the building process.
+      </p>
+
+      <p>
+        <strong>Oh, and it's completely free and open-source.</strong> Because
+        you should be free to shape and extend the tools you use. Rune lets you
+        poke, prod, break, fix, and make it completely yours.
       </p>
 
       <h2>Our Vision</h2>
