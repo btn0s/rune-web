@@ -39,42 +39,42 @@ export default function Horizon1Client() {
           <Image src={logo} alt="Rune" width={24} height={24} /> rune.design
         </div>
         <Button variant="outline" size="sm" asChild>
-          <Link href="#beta-signup">Join the private beta</Link>
+          <Link href="#beta-signup">Join the community</Link>
         </Button>
       </div>
 
-      <h1>The creative platform for modern software</h1>
+      <h1>Open source visual development for design engineers</h1>
 
       <p>
-        <strong>You're stuck in an endless prompt-and-correct loop.</strong>{" "}
-        When you show AI your Figma designs through screenshots, you're stuck in
-        a frustrating cycle: describe what you meant, correct AI's assumptions,
-        explain again, and repeat. Each text chat loses more context, until
-        you're spending more time explaining than creating.
+        <strong>Design engineers deserve their own platform.</strong> You bridge
+        the gap between design and engineering, but your tools force you to
+        choose sides. Design tools don't respect your engineering expertise,
+        while development environments ignore your visual creativity. It's time
+        for a platform that celebrates your unique skillset.
       </p>
 
       <p>
-        <strong>Your creativity speaks a richer language.</strong> Every Figma
-        file contains a complete vocabulary of components, styles,
-        relationships, and creative decisions. But instead of bringing your
-        vision to life, you're stuck writing chat messages about it - like a
-        painter forced to describe their art through text instead of picking up
-        a brush.
+        <strong>Your hybrid skills are your superpower.</strong> You think in
+        systems, components, and visual relationships. You understand both
+        design constraints and engineering trade-offs. You shouldn't have to
+        translate your ideas through prompts or screenshots - you need a canvas
+        that speaks your native language.
       </p>
 
-      <h2>Rune sets you free</h2>
+      <h2>Welcome home, design engineers</h2>
 
       <p>
-        Rune combines an infinite canvas, Figma design import, visual
-        programming, and AI code generation into one platform where everyone
-        speaks the same creative language.
+        Rune is an open source platform that puts design engineers first. From
+        Figma designs to production code, we've built an environment where
+        visual thinking and engineering excellence work as one - because that's
+        how you work best.
       </p>
 
       <p>
-        Your Figma designs flow directly into the canvas as living software. Add
-        behaviors through direct manipulation. Express logic visually. Ship
-        production-ready applications that are exactly what you imagined - no
-        translations needed.
+        Import your Figma designs as living, interactive elements. Define
+        behaviors visually. Create production-ready applications that perfectly
+        match your design intent - all in a powerful open source platform built
+        for the way you think and work.
       </p>
 
       <div className="not-prose py-6 mb-6">
@@ -84,11 +84,11 @@ export default function Horizon1Client() {
               <Palette className="size-4" />
             </div>
             <div>
-              <h4 className="font-semibold text-lg m-0">Pull from Figma</h4>
+              <h4 className="font-semibold text-lg m-0">Figma Integration</h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
-                Import your entire design vocabulary - components, styles,
-                relationships, - as structured data with pixel-perfect fidelity.
-                No explanation or guesswork.
+                Transform your Figma designs into structured, type-safe
+                components. Maintain perfect fidelity with your design tokens,
+                variants, and constraints.
               </p>
             </div>
           </div>
@@ -99,12 +99,12 @@ export default function Horizon1Client() {
             </div>
             <div>
               <h4 className="font-semibold text-lg m-0">
-                Add Rich Interactions and Data
+                Visual Programming for Engineers
               </h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
-                Express interactions in Rune's native visual language. Add
-                animations, transitions, and data flows through direct
-                manipulation - as natural as sketching.
+                Express complex logic and data flows in a visual language that
+                matches your thinking. Full TypeScript support and extensibility
+                for serious engineering work.
               </p>
             </div>
           </div>
@@ -115,12 +115,12 @@ export default function Horizon1Client() {
             </div>
             <div>
               <h4 className="font-semibold text-lg m-0">
-                Get Production-Ready Code
+                Production-Ready Output
               </h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
-                Rune ships your complete system as production-ready code that
-                captures your vision perfectly. Intent to reality in one unified
-                experience.
+                Generate clean, maintainable TypeScript and React components
+                that meet your standards. Customize every aspect of the output
+                to match your team's conventions.
               </p>
             </div>
           </div>
@@ -133,7 +133,9 @@ export default function Horizon1Client() {
 
       <hr />
 
-      <p className="font-semibold">Rune – Figma to Code for the Age of AI</p>
+      <p className="font-semibold">
+        Rune – Open Source Visual Development for Design Engineers
+      </p>
     </motion.div>
   );
 }
