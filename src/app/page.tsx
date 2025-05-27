@@ -3,36 +3,35 @@ import { metadata as pagemetadata } from "./(pages)/horizon-1/page";
 import Horizon1Client from "./(pages)/horizon-1/client";
 
 export const metadata: Metadata = {
-  title: "Rune - Open Source Visual Development Platform for Design Engineers",
-  description:
-    "An open source platform built for design engineers to create, prototype, and ship production-ready applications using visual programming and AI-powered code generation.",
+  title: pagemetadata.title,
+  description: pagemetadata.description,
   keywords: [
-    "open source development",
+    "figma prototyping",
     "design engineering",
-    "visual programming",
-    "design to code",
-    "AI code generation",
+    "interactive prototypes",
     "design engineer tools",
-    "visual software development",
+    "figma to prototype",
+    "visual programming",
+    "open source prototyping",
+    "advanced prototyping",
     "design systems",
-    "component development",
+    "component prototyping",
+    "engineering prototypes",
+    "figma integration",
     "design engineering platform",
-    "open source tools",
-    "visual development environment",
-    "figma to code",
-    "design prototyping",
-    "collaborative development",
+    "prototype development",
     "design engineering workflow",
-    "visual canvas",
-    "prototype to production",
+    "visual development",
     "design automation",
+    "prototype to production",
+    "collaborative prototyping",
     "developer experience",
   ],
   authors: [{ name: "thinkhuman.co" }],
   creator: "rune.design",
   publisher: "thinkhuman.co",
   category: "Design Engineering Tools",
-  classification: "Open Source Development Platform",
+  classification: "Prototyping Platform",
   robots: {
     index: true,
     follow: true,
@@ -45,10 +44,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Rune - Open Source Visual Development Platform for Design Engineers",
-    description:
-      "An open source platform built for design engineers to create, prototype, and ship production-ready applications using visual programming and AI-powered code generation.",
+    title: pagemetadata.title,
+    description: pagemetadata.description,
     url: "https://rune.design",
     siteName: "rune.design",
     images: [
@@ -56,7 +53,7 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Rune - Open Source Visual Development Platform for Design Engineers",
+        alt: "Rune - Figma Prototyping for Design Engineers",
       },
     ],
     locale: "en_US",
@@ -64,16 +61,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Rune - Open Source Visual Development Platform for Design Engineers",
-    description:
-      "An open source platform built for design engineers to create, prototype, and ship production-ready applications using visual programming and AI-powered code generation.",
+    title: pagemetadata.title,
+    description: pagemetadata.description,
     images: ["/og.png"],
     creator: "@btn0s",
     site: "rune.design",
-  },
-  alternates: {
-    canonical: "https://rune.design",
   },
 };
 

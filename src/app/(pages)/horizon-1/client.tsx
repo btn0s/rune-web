@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { BetaSignup } from "@/components/ui/beta-signup";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Palette, Rocket, Zap } from "lucide-react";
+import { Palette, Rocket, Zap, Code } from "lucide-react";
 import logo from "@/assets/images/logo.svg";
 
 const DEFAULT_TRANSITION = {
@@ -43,52 +43,55 @@ export default function Horizon1Client() {
         </Button>
       </div>
 
-      <h1>Open source visual development for design engineers</h1>
+      <h1>Visual prototyping for design engineers</h1>
 
       <p>
-        <strong>Design engineers deserve their own platform.</strong> You bridge
-        the gap between design and engineering, but your tools force you to
-        choose sides. Design tools don't respect your engineering expertise,
-        while development environments ignore your visual creativity. It's time
-        for a platform that celebrates your unique skillset.
+        <strong>Our hybrid skills are a superpower.</strong> As design
+        engineers, we think in systems and visual relationships while
+        understanding both design constraints and engineering trade-offs. The
+        fluidity of our unique skillset has become increasingly valuable in the
+        age of AI.
       </p>
 
       <p>
-        <strong>Your hybrid skills are your superpower.</strong> You think in
-        systems, components, and visual relationships. You understand both
-        design constraints and engineering trade-offs. You shouldn't have to
-        translate your ideas through prompts or screenshots - you need a canvas
-        that speaks your native language.
-      </p>
-
-      <h2>Welcome home, design engineers</h2>
-
-      <p>
-        Rune is an open source platform that puts design engineers first. From
-        Figma designs to production code, we've built an environment where
-        visual thinking and engineering excellence work as one - because that's
-        how you work best.
+        <strong>Current tools force us to choose sides.</strong> Design here,
+        code there—with nothing in between. Figma prototyping lacks the fidelity
+        of code, while IDEs ignore our visual creativity. Even AI tools, despite
+        their novelty, lose context through text-based interfaces.
       </p>
 
       <p>
-        Import your Figma designs as living, interactive elements. Define
-        behaviors visually. Create production-ready applications that perfectly
-        match your design intent - all in a powerful open source platform built
-        for the way you think and work.
+        <strong>We deserve tools that speak our language</strong>—visual and
+        technical, creative and structured.
       </p>
 
-      <div className="not-prose py-6 mb-6">
+      <h2>Enter Rune.</h2>
+
+      <p>
+        <strong>
+          Visual prototyping built by design engineers, for design engineers.
+        </strong>
+      </p>
+
+      <p>
+        Import from Figma, add real logic and behaviors through visual
+        programming. Build and test in a live preview environment where your
+        prototypes actually run. Export as AI-ready specifications for seamless
+        implementation.
+      </p>
+
+      <div className="not-prose pt-8 pb-4">
         <div className="grid gap-6">
           <div className="flex items-start gap-4">
             <div className="size-6 shrink-0 bg-blue-50 text-blue-500 rounded-lg flex items-center justify-center font-bold">
               <Palette className="size-4" />
             </div>
             <div>
-              <h4 className="font-semibold text-lg m-0">Figma Integration</h4>
+              <h4 className="font-semibold text-lg m-0">Figma Import</h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
-                Transform your Figma designs into structured, type-safe
-                components. Maintain perfect fidelity with your design tokens,
-                variants, and constraints.
+                Import designs as structured data that preserves your design
+                decisions—creating a foundation for AI to understand not just
+                what you designed, but why.
               </p>
             </div>
           </div>
@@ -98,13 +101,10 @@ export default function Horizon1Client() {
               <Zap className="size-4" />
             </div>
             <div>
-              <h4 className="font-semibold text-lg m-0">
-                Visual Programming for Engineers
-              </h4>
+              <h4 className="font-semibold text-lg m-0">Visual Programming</h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
-                Express complex logic and data flows in a visual language that
-                matches your thinking. Full TypeScript support and extensibility
-                for serious engineering work.
+                Express complex behaviors through an intuitive visual
+                language—bridging human creativity and machine understanding.
               </p>
             </div>
           </div>
@@ -114,27 +114,76 @@ export default function Horizon1Client() {
               <Rocket className="size-4" />
             </div>
             <div>
+              <h4 className="font-semibold text-lg m-0">Real prototypes</h4>
+              <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
+                Run actual prototypes in a live environment—think Origami Studio
+                meets Unreal Engine. Export as AI-ready specs that capture every
+                nuance.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <div className="size-6 shrink-0 bg-orange-50 text-orange-500 rounded-lg flex items-center justify-center font-bold">
+              <Code className="size-4" />
+            </div>
+            <div>
               <h4 className="font-semibold text-lg m-0">
-                Production-Ready Output
+                Free and Open Source
               </h4>
               <p className="text-sm text-gray-600 dark:text-gray-400 m-0 ">
-                Generate clean, maintainable TypeScript and React components
-                that meet your standards. Customize every aspect of the output
-                to match your team's conventions.
+                Fully open-source and extensible—because creative tools should
+                be shaped by the community that uses them.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="not-prose">
+      <p>
+        But Rune is more than a tool—it's a glimpse into a new paradigm where
+        visual thinking and technical implementation naturally converge, where
+        your creative intent is preserved and amplified through every stage of
+        the building process.
+      </p>
+
+      <h2>Our Vision</h2>
+
+      <p>
+        <strong>
+          The next generation of creative tools will be visual, structured, and
+          built for the age of AI.
+        </strong>
+      </p>
+
+      <p>
+        Today's tools fragment our workflow. Design tools can't express
+        engineering constraints. Coding tools can't preserve design intent. The
+        result? Creative vision lost in translation.
+      </p>
+
+      <p>
+        AI needs structure and context to understand our intent. Visual
+        programming bridges this gap, creating the rich specifications AI needs
+        to faithfully implement our vision.
+      </p>
+
+      <p>
+        Rune is the first step toward a future where visual thinking and
+        technical implementation converge—where tools amplify rather than
+        constrain our creativity.
+      </p>
+
+      <p>Join us in building this future.</p>
+
+      <div className="not-prose mt-12">
         <BetaSignup />
       </div>
 
       <hr />
 
       <p className="font-semibold">
-        Rune – Open Source Visual Development for Design Engineers
+        Rune – Visual prototyping for the Age of AI
       </p>
     </motion.div>
   );

@@ -1,9 +1,9 @@
 import Horizon1Client from "./client";
 
 export const metadata = {
-  title: "Figma to Code for the Age of AI",
+  title: "Rune - Visual Prototyping for the Age of AI",
   description:
-    "Rune combines an infinite canvas, Figma design import, visual programming, and AI code generation into one platform where everyone speaks the same creative language.",
+    "Built by design engineers, for design engineers. Import from Figma, add real logic through visual programming, run actual prototypes in a live environment, and export AI-ready specifications for seamless implementation.",
 };
 
 export default function Horizon1Page() {
