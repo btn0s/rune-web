@@ -1,0 +1,28 @@
+Runerune.design
+Join the private beta
+The creative platform for modern software
+You're stuck in an endless prompt-and-correct loop. When you show AI your Figma designs through screenshots, you're stuck in a frustrating cycle: describe what you meant, correct AI's assumptions, explain again, and repeat. Each text chat loses more context, until you're spending more time explaining than creating.
+
+Your creativity speaks a richer language. Every Figma file contains a complete vocabulary of components, styles, relationships, and creative decisions. But instead of bringing your vision to life, you're stuck writing chat messages about it - like a painter forced to describe their art through text instead of picking up a brush.
+
+Rune sets you free
+Rune combines an infinite canvas, Figma design import, visual programming, and AI code generation into one platform where everyone speaks the same creative language.
+
+Your Figma designs flow directly into the canvas as living software. Add behaviors through direct manipulation. Express logic visually. Ship production-ready applications that are exactly what you imagined - no translations needed.
+
+Pull from Figma
+Import your entire design vocabulary - components, styles, relationships, - as structured data with pixel-perfect fidelity. No explanation or guesswork.
+
+Add Rich Interactions and Data
+Express interactions in Rune's native visual language. Add animations, transitions, and data flows through direct manipulation - as natural as sketching.
+
+Get Production-Ready Code
+Rune ships your complete system as production-ready code that captures your vision perfectly. Intent to reality in one unified experience.
+
+Private Beta coming soon
+Enter your email to be notified and keep up to date with our progress.
+
+your@email.com
+Sign up
+Rune – Figma to Code for the Age of AI
+
